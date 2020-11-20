@@ -1,0 +1,11 @@
+$preto:#1a1a1a; 
+$amarelo:#FFF36D;
+
+$theme-colors:(
+  "preto": $preto,
+  "amarelo": $amarelo
+);
+
+
+//imports o Bootstrap
+@import './node_modules/bootstrap/scss/bootstrap';

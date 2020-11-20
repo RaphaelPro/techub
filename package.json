@@ -1,0 +1,32 @@
+{
+  "name": "techub",
+  "version": "1.0.0",
+  "description": "Site criado para a empresa TecHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaelPro/techub.git"
+  },
+  "author": "Raphael Alves de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaphaelPro/techub/issues"
+  },
+  "homepage": "https://github.com/RaphaelPro/techub#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "install": "^0.13.0",
+    "jquery": "^3.5.1",
+    "npm": "^6.14.8",
+    "popper": "^1.0.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
