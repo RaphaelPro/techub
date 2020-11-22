@@ -59,15 +59,25 @@
 <!--- Vai para o arquivo header dps -->
 <header class="container-fluid">
  <div class="row">
-   <div class="col-12 fundo">
+   <div class="col-12 fundo mb-5 mb-lg-0 position-relative">
     <a href="" class="btn btn-conectar d-flex justify-content-center align-items-center">
       ME CONECTAR
     </a>
-    <img class="whats" src="assets/img/whats_icon.png" alt="Número do Whatsapp">
+    <div class="whats text-center">
+      <a href="#">
+        <img src="assets/img/whats_icon.png" alt="Icone do WhatsApp">
+      </a>
+      <p class="position-relative p-2">
+        Já encontrou o que procura ou gostaria de tirar uma dúvida?
+      </p>
+      <a class="btn d-flex flex-column justify-content-center align-content-center btn-whats" href="">
+        Falar no WhatsApp
+      </a>
+    </div>
    </div>
  </div>
 </header>
-<div class="container">
+<div class="container position-relative">
   <div class="row">
     <div class="col-12 d-lg-flex justify-content-center align-items-center">
       <div class="titulo">
@@ -81,26 +91,47 @@
       </div>
     </div>
   </div>
+</div>
+<div class="container-fluid">
   <div class="row">
-   <div class="col-12 d-lg-flex justify-content-center align-items-center">
-    <div class="subtitulo text-center mx-0">
-      <h2>Nossos Hubs</h2>
-      <p>
-        Localizados na ilha técnológica de Recife, nossos hubs te conectam a um ecossistema de inovação, com a comodidade e agilidade que seu negócio precisa. 
-      </p>
-  </div>
+    <div class="col-12 d-lg-flex justify-content-center align-items-center">
+     <div class="subtitulo text-center mx-0">
+       <h2>Nossos Hubs</h2>
+       <p class="p-2">
+         Localizados na ilha técnológica de Recife, nossos hubs te conectam a um ecossistema de inovação, com a comodidade e agilidade que seu negócio precisa. 
+       </p>
    </div>
-  </div>
+    </div>
+   </div>
 </div>
 <section class="container-fluid">
   <div class="row">
-    <div class="col-12  d-flex justify-content-center align-items-lg-center">
+    <div class="col-12 position-relative d-flex justify-content-center align-items-lg-center">
+      <img class="elipse img-fluid" src="assets/img/Ellipse.png" alt="Elipse">
       <div class="img-area">
         <img class="mx-0" src="assets/img/recifeantigo.png" alt="">
       </div>
+      <img class="img-fluid bubble" src="assets/img/Bolinhas.png" alt="Bolinhas">
+        <div id="paco" class="espaco">
+          <img class="img-fluid mais" src="assets/img/menos.svg" alt="">
+          <h3>Hub Paço Alfândega</h3>
+         <div class="row">
+          <div class="col-7">
+            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum aliquid, officia ad repudiandae provident quod pariatur atque unde ex fugit consectetur corrupti rerum? Magnam recusandae libero quas nobis enim!</p>
+          </div>
+          <div id="saiba"  class="col-5">
+              <a class="btn d-flex flex-column justify-content-center align-content-center btn-saiba" href="#">SAIBA MAIS</a>
+          </div>
+         </div>
+        </div>
+        <div id="paco2" class="espaco2">
+          <img class="img-fluid mais2" src="assets/img/abrir.svg" alt="">
+          <h3>Hub Paço Alfândega</h3>
+        </div>
     </div>
   </div>
 </section>
+
 
 
   <!-- Optional JavaScript -->
@@ -110,5 +141,3 @@
   <script src="assets/js/popper.js"></script>
   <script src="assets/js/bootstrap.js"></script>
 </body>
-
-</html>
