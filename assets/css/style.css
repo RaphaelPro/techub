@@ -7,9 +7,6 @@ p {
   margin-top: 32px;
   font-size: 20px; }
 
-.onTop {
-  background-color: transparent; }
-
 .btn-entrar {
   background: transparent; }
 
@@ -77,26 +74,31 @@ a.btn-conectar {
   position: absolute;
   background-color: black;
   color: white;
-  width: 400px;
-  top: 440px;
-  left: 280px;
-  height: 500px; }
+  width: 450px;
+  top: 490px;
+  left: 230px;
+  height: 430px; }
 
 .espaco h3 {
   margin: 10px; }
+
+.espaco p {
+  font-size: 18px;
+  line-height: 30px; }
 
 .mais {
   width: 30px;
   height: 30px;
   position: absolute;
-  left: 360px;
+  left: 390px;
   top: 15px; }
 
 .btn-saiba {
   position: absolute;
   width: 130px;
   height: 53px;
-  top: 380px;
+  top: 290px;
+  left: 0px;
   background: #FFF36D !important; }
 
 a.btn-whats {
@@ -106,19 +108,23 @@ a.btn-whats {
   position: absolute;
   background-color: gray;
   color: white;
-  width: 400px;
-  top: 440px;
+  width: 450px;
+  top: 490px;
   left: 680px;
-  height: 500px; }
+  height: 60px; }
 
 .espaco2 h3 {
   margin: 10px; }
+
+.espaco2 p {
+  font-size: 18px;
+  line-height: 30px; }
 
 .mais2 {
   width: 30px;
   height: 30px;
   position: absolute;
-  left: 360px;
+  left: 390px;
   top: 15px; }
 
 .titulo {
@@ -161,7 +167,7 @@ a.btn-whats {
 
 .img-area {
   width: 1100px;
-  height: 500px;
+  height: 550px;
   margin-bottom: 50px; }
 
 .img-area img {
@@ -181,10 +187,16 @@ a.btn-whats {
 
 .bubble {
   position: absolute;
-  top: 410px;
+  top: 470px;
   left: 0px;
   width: 200px;
   height: 176px; }
+
+.solucoes {
+  margin-top: 350px;
+  width: 595px;
+  height: auto;
+  text-align: center; }
 
 @media (width: 320px) {
   .btn-conectar {
@@ -241,7 +253,28 @@ a.btn-whats {
     top: 140px;
     left: 0px;
     width: 150px;
-    height: 150px; } }
+    height: 150px; }
+  .espaco {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 90%;
+    top: 280px;
+    left: 15px;
+    height: 530px; }
+  .espaco2 {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    width: 90%;
+    top: 350px;
+    left: 15px;
+    height: 60px; }
+  .btn-saiba {
+    width: 130px;
+    height: 53px;
+    top: 0px;
+    left: 20px; } }
 
 @media (width: 375px) {
   .btn-conectar {
