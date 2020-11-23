@@ -45,6 +45,7 @@ var ico = document.getElementById('mais');
 var text = document.getElementById('text');
 var text1 = document.getElementById('text1');
 var img = document.getElementById('img-espaco');
+var solu = document.getElementById('solu');
 
 
 pac.onclick = function () {
@@ -55,8 +56,7 @@ pac.onclick = function () {
         pac.style.width = "450px";
         pac.style.background = "gray";
         ico.src = "assets/img/abrir.svg";
-        text.innerHTML = "";
-        text1.innerHTML = ""; 
+        solu.style.marginTop = "50px";
     }else{
       document.getElementById('saiba').style.display = "block";
       big = true;
@@ -65,8 +65,7 @@ pac.onclick = function () {
       pac.style.background = "black";
       ico.src = "assets/img/menos.svg";
       img.src = "assets/img/recifeantigo.png";
-      text.innerHTML = "Alugue uma sala privativa a partir de R$3 mil! Seu negócio em uma das melhores localizações de Recife, na ilha tecnológica, e com ampla conveniência de um shopping à disposição. Conheça nossa estrutura!";
-      text1.innerHTML = "Rua da Alfândega,nº35,Lj 401. CEP 50030-030"; 
+      solu.style.marginTop = "350px";
     }    
 }
 
@@ -77,9 +76,6 @@ var text3 = document.getElementById('text3');
 var pc2 = document.getElementById('paco2');
 var expandido = true;
 var ico2 = document.getElementById('mais2')
-
-text2.innerHTML = "";
-text3.innerHTML = ""; 
 pc2.onclick = function(){
   if(expandido){
     expandido = false;
@@ -89,8 +85,7 @@ pc2.onclick = function(){
     ico2.src = "assets/img/menos.svg";
     img.src = "assets/img/rio_branco.png";
     document.getElementById('saiba2').classList.replace('d-none', 'd-block');
-    text2.innerHTML = "Alugue uma sala privativa a partir de R$3 mil! Seu negócio em uma das melhores localizações de Recife, na ilha tecnológica, e com ampla conveniência de um shopping à disposição. Conheça nossa estrutura!";
-    text3.innerHTML = "Rua da Alfândega,nº35,Lj 401. CEP 50030-030"; 
+    solu.style.marginTop = "350px"; 
   }else{
     expandido = true;
     pc2.style.height = "60px";
@@ -98,8 +93,7 @@ pc2.onclick = function(){
     pc2.style.background = "gray";
     ico2.src = "assets/img/abrir.svg"
     document.getElementById('saiba2').classList.replace('d-block', 'd-none');
-    text2.innerHTML = "";
-    text3.innerHTML = ""; 
+    solu.style.marginTop = "50px";
   }
 } 
 
@@ -110,3 +104,36 @@ const sm3 = window.matchMedia('(max-width: 425px)');
 const md = window.matchMedia('(max-width: 768px)');
 const lg = window.matchMedia('(max-width: 1024px)'); 
 
+//Over
+function houver1() {
+  document.getElementById('img1-hover').src = 'assets/img/Mask_Group.png';
+}
+
+function houver2() { 
+  document.getElementById('img2-hover').src = 'assets/img/office_mask.png';
+ }
+
+ function houver3() { 
+  document.getElementById('img3-hover').src = 'assets/img/evento_mask.png';
+ }
+
+ function houver4() { 
+  document.getElementById('img4-hover').src = 'assets/img/postal_mask.png';
+ }
+
+
+ //Out
+function houver1Out() {
+  document.getElementById('img1-hover').src = 'assets/img/posicao_trabalho.png';
+}
+function houver2Out() {
+  document.getElementById('img2-hover').src = 'assets/img/office.png';
+}
+
+function houver3Out() { 
+  document.getElementById('img3-hover').src = 'assets/img/evento.png';
+ }
+
+ function houver4Out() { 
+  document.getElementById('img4-hover').src = 'assets/img/caixa_postal.png';
+ }
