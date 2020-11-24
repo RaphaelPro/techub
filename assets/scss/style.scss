@@ -3,6 +3,8 @@
 $preto:black; 
 $amarelo:#FFF36D;
 
+$link-color: $preto;
+
 $theme-colors:(
   "preto": $preto,
   "amarelo": $amarelo
@@ -143,6 +145,7 @@ a.btn-whats{
   top: 490px;
   left: 680px;
   height: 60px;
+  z-index: 1;
 }
 
 .espaco2 h3{
@@ -240,7 +243,8 @@ height: 176px;
 }
 
 .solucoes{
-  margin-top: 350px;
+position: relative;
+margin-top: 350px;
 width: 595px;
 height: auto;
 text-align: center;
@@ -411,6 +415,7 @@ a.black{
   }
   
   .titulo{
+    width: 100%;
   margin-top: 250px;
   height: 223px;
   margin-bottom: 30px;
@@ -424,11 +429,11 @@ a.black{
   }
 
   .titulo p{
-    white-space: pre;
+    width: 100%;
   }
   
   .subtitulo{
-    margin-top: 30px;
+    margin-top: 100px;
     width: 100%;
     height: auto;
     margin-bottom: 30px;
@@ -471,26 +476,82 @@ a.black{
     top: 280px;
     left: 15px;
     height: 530px;
+  
+  }
+
+  .espaco h3{
+    font-size: 22px;
+  }
+
+  .espaco p{
+    font-size: 18px;
+  }
+
+  .mais{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 240px;
+    top: 15px;
   }
 
   .espaco2{
+    display: none;
     position: absolute;
     background-color: gray;
     color: white;
     width: 90%;
-    top: 350px;
+    top: 380px;
     left: 15px;
     height: 60px;
   }
+
+  .espaco2 h3{
+    font-size: 22px;
+  }
+
+  .espaco2 p{
+    font-size: 18px;
+  }
   
+  .mais2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 240px;
+    top: 15px;
+  }
+
   .btn-saiba{  
     width: 130px;
     height: 53px;
     top: 0px;
     left: 20px;
     }
-}
 
+    #testimonialCarousel{
+      width: 100%;
+    }
+
+    .carousel-bg{
+      background-size: 0%;
+    }
+
+    .solucoes{
+      margin-top: 650px;
+      width: auto;
+      height: auto;
+      text-align: center;
+      }
+
+      .input-email{
+        width: 100%;
+      }
+      
+      .blockquote{
+        display: none;
+      }
+  }
 @media(width:375px){
   .btn-conectar{
     left: 20px;
@@ -571,6 +632,97 @@ a.black{
       width: 150px;
       height: 150px;
     }
+
+    .carousel-bg{
+      background-size: 0%;
+    }
+
+    .solucoes{
+      margin-top: 650px;
+      width: auto;
+      height: auto;
+      text-align: center;
+      }
+
+      .input-email{
+        width: 100%;
+      }
+      
+      .blockquote{
+        display: none;
+      }
+      .espaco{
+        position: absolute;
+        background-color: black;
+        color: white;
+        width: 90%;
+        top: 320px;
+        left: 15px;
+        height: 530px;
+      
+      }
+    
+      .espaco h3{
+        font-size: 22px;
+      }
+    
+      .espaco p{
+        font-size: 18px;
+      }
+    
+      .mais{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 280px;
+        top: 15px;
+      }
+    
+      .espaco2{
+        display: none;
+        position: absolute;
+        background-color: gray;
+        color: white;
+        width: 90%;
+        top: 400px;
+        left: 15px;
+        height: 60px;
+      }
+    
+      .espaco2 h3{
+        font-size: 22px;
+      }
+    
+      .espaco2 p{
+        font-size: 18px;
+      }
+      
+      .mais2{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 280px;
+        top: 15px;
+      }
+    
+      .btn-saiba{  
+        width: 130px;
+        height: 53px;
+        top: 0px;
+        left: 20px;
+        }
+    
+        #testimonialCarousel{
+          width: 100%;
+        }
+
+        .card-text{
+          top:430px;
+        }
+
+        .icon-card{
+          top: 350px;
+        }
 }
 
 @media(width:425px){
@@ -652,6 +804,97 @@ a.black{
         width: 150px;
         height: 150px;
       }
+
+      .carousel-bg{
+        background-size: 0%;
+      }
+  
+      .solucoes{
+        margin-top: 650px;
+        width: auto;
+        height: auto;
+        text-align: center;
+        }
+  
+        .input-email{
+          width: 100%;
+        }
+        
+        .blockquote{
+          display: none;
+        }
+        .espaco{
+          position: absolute;
+          background-color: black;
+          color: white;
+          width: 90%;
+          top: 320px;
+          left: 15px;
+          height: 530px;
+        
+        }
+      
+        .espaco h3{
+          font-size: 22px;
+        }
+      
+        .espaco p{
+          font-size: 18px;
+        }
+      
+        .mais{
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          left: 340px;
+          top: 13px;
+        }
+      
+        .espaco2{
+          display: none;
+          position: absolute;
+          background-color: gray;
+          color: white;
+          width: 90%;
+          top: 400px;
+          left: 15px;
+          height: 60px;
+        }
+      
+        .espaco2 h3{
+          font-size: 22px;
+        }
+      
+        .espaco2 p{
+          font-size: 18px;
+        }
+        
+        .mais2{
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          left: 340px;
+          top: 15px;
+        }
+      
+        .btn-saiba{  
+          width: 130px;
+          height: 53px;
+          top: 0px;
+          left: 20px;
+          }
+      
+          #testimonialCarousel{
+            width: 100%;
+          }
+
+          .card-text{
+            top:430px;
+          }
+  
+          .icon-card{
+            top: 350px;
+          }
 }
 
 @media(width:768px){
@@ -751,6 +994,98 @@ a.black{
         width: 180px;
         height: 180px;
       }
+
+      .carousel-bg{
+        background-size: 0%;
+      }
+  
+      .solucoes{
+        margin-top: 650px;
+        width: auto;
+        height: auto;
+        text-align: center;
+        }
+  
+        .input-email{
+          width: 100%;
+        }
+        
+        .blockquote{
+          display: none;
+        }
+        .espaco{
+          position: absolute;
+          background-color: black;
+          color: white;
+          width: 300px;
+          top: 320px;
+          left: 90px;
+          height: 530px;
+        
+        }
+      
+        .espaco h3{
+          font-size: 22px;
+        }
+      
+        .espaco p{
+          font-size: 18px;
+        }
+      
+        .mais{
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          left: 240px;
+          top: 13px;
+        }
+      
+        .espaco2{
+          display: none;
+          position: absolute;
+          background-color: gray;
+          color: white;
+          width: 300px;
+          top: 320px;
+          left: 390px;
+          height: 60px;
+        }
+      
+        .espaco2 h3{
+          font-size: 22px;
+        }
+      
+        .espaco2 p{
+          font-size: 18px;
+        }
+        
+        .mais2{
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          left: 250px;
+          top: 15px;
+        }
+      
+        .btn-saiba{  
+          width: 130px;
+          height: 53px;
+          top: 0px;
+          left: 20px;
+          }
+      
+          #testimonialCarousel{
+            width: 100%;
+          }
+
+          .card-text{
+            top:390px;
+          }
+  
+          .icon-card{
+            top: 310px;
+          }
+
 }
 
 @media(width:1024px){
@@ -765,7 +1100,7 @@ a.black{
     width: 50%;
     height: 300px;
     left: 250px;
-    top: 770px;
+    top: 1070px;
     }
   
     .whats img{
@@ -844,6 +1179,103 @@ a.black{
       font-size: 18px;
     }
 
+    .carousel-bg{
+      background-size: 0%;
+    }
+
+    .solucoes{
+      margin-top: 650px;
+      width: auto;
+      height: auto;
+      text-align: center;
+      }
+
+      .input-email{
+        width: 100%;
+      }
+      
+      .blockquote{
+        display: none;
+      }
+      .espaco{
+        position: absolute;
+        background-color: black;
+        color: white;
+        width: 380px;
+        top: 370px;
+        left: 110px;
+        height: 530px;
+      
+      }
+    
+      .espaco h3{
+        font-size: 22px;
+      }
+    
+      .espaco p{
+        font-size: 18px;
+      }
+    
+      .mais{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 340px;
+        top: 13px;
+      }
+    
+      .espaco2{
+        display: none;
+        position: absolute;
+        background-color: gray;
+        color: white;
+        width: 380px;
+        top: 370px;
+        left: 500px;
+        height: 60px;
+      }
+    
+      .espaco2 h3{
+        font-size: 22px;
+      }
+    
+      .espaco2 p{
+        font-size: 18px;
+      }
+      
+      .mais2{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 340px;
+        top: 15px;
+      }
+    
+      .btn-saiba{  
+        width: 130px;
+        height: 53px;
+        top: 0px;
+        left: 20px;
+        }
+    
+        #testimonialCarousel{
+          width: 100%;
+        }
+
+        .card-text{
+          top:430px;
+        }
+
+        .icon-card{
+          top: 350px;
+        }
+
+        .btn-conectar{
+          width: 400px;
+          height: 80px;
+          top:900px;
+          left: 80px;
+        }
 }
 
 @media(width:1920px){
@@ -909,11 +1341,18 @@ a.black{
   .elipse{
     width: 288px;
     height: 288px;
-    left: 1696px;
+    left: 1625px;
     top: -90px;
     position: absolute;
     z-index: 1;
   }
+
+  .solucoes{
+    margin-top: 650px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    }
 
   .bubble{
     position: absolute;
@@ -929,7 +1368,63 @@ a.black{
     margin-bottom: 50px;
   }
 
+  .espaco{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 480px;
+    top:705px;
+    left: 510px;
+    height: 500px;
+  
+  }
 
+  .espaco h3{
+    font-size: 22px;
+  }
+
+  .espaco p{
+    font-size: 18px;
+  }
+
+  .mais{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 430px;
+    top: 13px;
+  }
+
+  .espaco2{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    width: 480px;
+    top: 705px;
+    left: 1010px;
+    height: 60px;
+  }
+
+  .espaco2 h3{
+    font-size: 22px;
+  }
+
+  .espaco2 p{
+    font-size: 18px;
+  }
+  
+  .mais2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 430px;
+    top: 15px;
+  }
+
+  .btn-saiba{
+    top:50px;
+    left: 30px;
+  }
 }
 //imports o Bootstrap
 @import './node_modules/bootstrap/scss/bootstrap';
