@@ -118,7 +118,7 @@ a.btn-conectar{
 
 .area-espaco{
   
-  top: 490px;
+  top: 540px;
 }
 
 .espaco h3{
@@ -389,6 +389,157 @@ a.black{
   white-space: pre-line!important;
 }
 //Medias querys----------------------------------------------------------------
+@media(min-width:320px) and (max-width:425px){
+  
+  .fundo{
+    background: url('../img/background_home_mobile_320px.png') right center no-repeat;
+    height: 300px;
+    background-size: cover;
+  }
+
+  .btn-conectar{
+    left: 20px;
+    top: calc(300px/1.3);
+  }
+  
+  .whats{
+    width: 80%;
+    height: 250px;
+    left: 50%;
+    top: 360px;
+    right: 0px;
+    bottom: 0px;
+    transform: translateX(-50%);
+    }
+
+    .titulo{
+      margin-top: 320px;
+      width: 100%;
+      height: auto;
+    }
+
+    .titulo h1{
+      font-size: 1.4em;
+      line-height: 45px;
+    }
+
+    .titulo p{
+      font-size: 1em;
+    }
+
+    .subtitulo{
+      width: 100%;
+      height: auto;
+    }
+
+    .subtitulo h2{
+      font-size: 1.5em;
+      line-height: 30px;
+    }
+
+    .subtitulo p{
+      font-size: 1em;
+    }
+
+    .img-area{
+      width: 95%;
+      height: 200px;
+    }
+
+    .elipse{
+      top: -20px;
+      width: 90px;
+      height: 90px;
+    }
+
+    .bubble{
+      width: 100px;
+      top:160px;
+      left: 0px;
+    }
+    
+    .area-espaco{
+      width: 100%;
+      top: 150px;
+      left: 0px;
+      left: 55%;
+      transform: translateX(-50%);
+    }
+
+    .espaco{
+      width: 90%;
+      height: 530px;
+    }
+
+    .espaco h3{
+      font-size: 23px;
+    }
+
+    .espaco p{
+      font-size: 16px;
+    }
+
+    .mais{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 85%;
+      top: 12px;
+    }
+    
+
+    .espaco2{
+      height: 60px;
+      width: 90%;
+    }
+
+    .espaco2 h3{
+      font-size: 23px;
+    }
+
+    .espaco2 p{
+      font-size: 16px;
+    }
+
+
+    .mais2{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 85%;
+      top: 13px;
+    }
+
+    .solucoes{
+      width: 100%;
+    }
+
+    .solucoes h3{
+      font-size: 1.5em;
+      line-height: 30px;
+    }
+
+    .solucoes p{
+      font-size: 1em;
+    }
+
+    .carousel-bg{
+      background-size: 0%;
+    }
+
+    .blockquote{
+      display: none;
+    }
+
+    #testimonialCarousel{
+      width: 100%;
+    }
+
+    .input-email{
+      width: 100%;
+    }
+}
+
 @media (min-width:425px) and (max-width:$sm){
   
   .btn-conectar{
@@ -846,9 +997,9 @@ a.black{
   .btn-conectar{
     width: 200px;
     height: 60px;
-    left: 40%;
+    left: 30%;
     transform: translateX(-40%);
-    top: calc(530px/1.3);
+    top: calc(530px/1.2);
   }
 
   a.btn-conectar{
@@ -864,12 +1015,23 @@ a.black{
 
   .whats{
     width: 50%;
-    height: 250px;
+    height: 270px;
     left: 50%;
     top: 630px;
     right: 0px;
     bottom: 0px;
     transform: translateX(-50%);
+    }
+
+    .btn-whats{
+      height: 80px;
+      left: 35%;
+      transform: translateX(-35%);
+    }
+
+    a.btn-whats{
+      font-weight: 600;
+      font-size: 1.5em;
     }
 
 
@@ -931,8 +1093,12 @@ a.black{
     }
 
     .espaco{
-      width: 90%;
-      height: 400px;
+      width: 70%;
+      height: 540px;
+    }
+
+    .espaco p{
+      font-size: 18px;
     }
 
     .espaco h3{
@@ -950,7 +1116,7 @@ a.black{
 
     .espaco2{
       height: 60px;
-      width: 90%;
+      width: 70%;
     }
 
     .espaco2 h3{
@@ -966,7 +1132,7 @@ a.black{
     }
 }
 
-@media(min-width:$xl) and (max-width:1500px){
+@media(min-width:$xl) and (max-width:1300px){
   p{
     font-size: 1.1em;
   }
@@ -1098,162 +1264,854 @@ a.black{
     }
 }
 
+@media (min-width:1360px) and (max-width:1500px){
+  .fundo{
+    background:#C4C4C4 url('../img/background_home_2_1300px.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 580px;
+    position: relative;
+  }
+  
+  .btn-conectar{
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  left: 400px;
+  top: 420px;
+  bottom: 0px;
+  right: 0px;
+  background-color:#FEDC32!important;
+  }
 
-@media (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) { 
-        .btn-conectar{
-          width: 160px;
-        height: 53px;
-        left: 917px;
-        top: 482px;
-        }
-      
-        .fundo{
-          background: url('../img/background_home.png') no-repeat left center;
-          background-size: cover;
-          height: 673px;
-        }
-      
-        .whats{
-        position: absolute;
-        width: 227px;
-        height: 287px;
-        left: 1529px;
-        top: 548px;
-        }
-      
-        .titulo h1{
-          font-style: normal;
-          font-weight: bold;
-          font-size: 56px;
-          line-height: 66px;
-          text-align: center;
-        }
-      
-        .titulo p{
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 24px;
-          line-height: 140%;
-        }
-      
-        .subtitulo{
-          margin-top: 150px;
-          margin-bottom: 50px;
-        }
-      
-        .subtitulo h2{
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 48px;
-          line-height: 56px;
-          text-align: center;
-        }
-      
-        .subtitulo p{
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 20px;
-          line-height: 24px;
-        }
-      
-        .elipse{
-          width: 288px;
-          height: 288px;
-         
-          position: absolute;
-          z-index: 1;
-        }
-      
-        .solucoes{
-          margin-top: 650px;
-          width: auto;
-          height: auto;
-          text-align: center;
-          }
-      
-        .bubble{
-          position: absolute;
-          top: 630px;
-          left: 0px;
-          width: 296px;
-          height: 176px;
-        }
+  .whats{
+    color: white;
+    background: black;
+    position: absolute;
+    width: 220px;
+    height: 250px;
+    top: 500px;
+    right:40px;
+    bottom: 0px;
+  }
+  
+  .whats img{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: -20px;
+    left:0;
+  }
+  
+  .whats p{
+    position: relative;
+  }
+  
+  .btn-whats{
+    position: relative;
+    background-color: #25d165!important;
+    width: 90%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left:13px;
+  }
+  
+  .espaco h3{
+    margin: 10px;
+  }
+  
+  .espaco{
+    float: left;
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 430px;
+    height: 500px;
+  }
+  
+  .area-espaco{
+    width: 100%;
+    top: 540px;
+  }
+  
+  .espaco h3{
+    margin: 10px;
+  }
+  
+  .espaco p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .mais{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 390px;
+    top: 15px;
+  }
+  
+  .btn-saiba{
+    float: left;
+  width: 130px;
+  height: 53px;
+  background: $amarelo!important;
+  }
+  
+  a.btn-whats{
+    color: white;
+  }
+  
+  .espaco2{
+    float: left;
+    position: relative;
+    background-color: gray;
+    color: white;
+    width: 430px;
+    height: 60px;
+  }
+  
+  .espaco2 h3{
+    margin: 10px;
+  }
+  
+  .espaco2 p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .mais2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 390px;
+    top: 15px;
+  }
+  
+  .titulo{
+    margin-top: 112px;
+    width: 900px;
+    height: 223px;
+   
+  }
+  
+  .titulo h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 66px;
+    text-align: center;
+  }
+  
+  .titulo p{
+    font-size: 16px;
+  line-height: 24px;
+  }
+  
+  .subtitulo{
+    margin-top:70px;
+    width: 595px;
+    height: 120px;
+    margin-bottom: 50px;
+  }
+  
+  .subtitulo h2{
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  .subtitulo p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  }
+  
+  .img-area{
+    width:90%;
+    height: 600px;
+    margin-bottom: 50px;
+  }
+  
+  .img-area img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .shadow-bottom{
+    box-shadow: 0 4px 2px -3px gray;
+  }
+  
+  .elipse{
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    right: 0px;
+    top:-50px;
+    z-index: 1;
+  }
+  
+  .bubble{
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    width: 230px;
+  height: 230px;
+  }
+  
+  .solucoes{
+  margin-top: 550px;
+  width: 595px;
+  height: auto;
+  text-align: center;
+  }
+  
+  .icon-card{
+  position: absolute;
+  width: 44px;
+  height: 53px;
+  top: 240px;
+  left: 20px;
+  }
+  
+  .t-card{
+    position: absolute;
+    left: 35px;
+    top: 310px; 
+  }
+  
+  .ovl{
+    opacity: 0;
+  }
+  
+  .ovl:hover{
+    opacity: 1;
+  }
+  
+  .ovl p{
+    font-size: 16px;
+  }
+  
+  .client-img { 
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 4px solid #fff;
+    margin: 0px auto 20px;
+    border-radius: 100%;
+  }
+  .carousel-content {
+    padding: 50px 0px;
+  }
+  .carousel-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  
+  .carousel-content span{
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .client-img img {
+    width: 100%;
+  }
+  
+  .carousel-bg{
+    background: url('../img/box-depoimento.png') no-repeat center center;
+    background-size: 100% 100%;
+  }
+  
+  #testimonialCarousel{
+    width: 80%;
+  }
+  
+  .blockquote{
+    position: absolute;
+    left: 50px;
+  }
+  
+  .input-email{
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #1a1a1a;
+    outline: none;
+  }
+  
+  .btn-conhecer{
+    width: 150px;
+    height:40px;
+    font-weight: 800!important;
+    border: 2px solid #FEDC32!important;
+    box-sizing: border-box;
+  }
+  
+  .btn-newsletter{
+    background: $amarelo!important;
+    width: 150px;
+    height:50px;
+    font-weight: 800!important;
+  }
+  
+  .newsletter{
+    width: 50%;
+  }
+  
+  .text-newsletter p{
+    width: 100%;
+    white-space: pre-line;
+  }
+  
+  a.black{
+    margin-top: 15px;
+    font-size: 20px;
+    color: black!important;
+    text-decoration: underline;
+  }
+  
+  .mt-102{
+    margin-top: 102px;
+  }
+  
+  .conhecer h1{
+    line-height: 50px;
+    width: 75%;
+  }
+  .conhecer p{
+    white-space: pre-line;
+  }
+  
+  .mt-56{
+    margin-top: 56px;
+  }
+  
+  .enderecos p{
+    white-space: pre;
+    white-space: pre-line;
+  }
+  
+  .card-text{
+    white-space: pre-line!important;
+  }
+  
+}
 
-        
-    .area-espaco{
-      width: 95%;
-      top: 0px;
-      left: 0px;
-      left: 50%;
-      transform: translateX(-50%);
+@media(min-width: 1500px) and (max-width: 1800px){
+  .fundo{
+    background:#C4C4C4 url('../img/background_home_2_1300px.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+  }
+  
+  .btn-conectar{
+  width: 200px;
+  height: 70px;
+  left: 35%;
+  transform: translateX(-35%);
+  top: calc(600px/1.3);
+  bottom: 0px;
+  right: 0px;
+ 
+  }
+
+  a.btn-conectar{
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+
+  .whats{
+    color: white;
+    background: black;
+    position: absolute;
+    width: 220px;
+    height: 250px;
+    top: 500px;
+    right:40px;
+    bottom: 0px;
+  }
+  
+  .whats img{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: -20px;
+    left:0;
+  }
+  
+  .whats p{
+    position: relative;
+  }
+  
+  .btn-whats{
+    position: relative;
+    background-color: #25d165!important;
+    width: 90%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left:13px;
+  }
+  
+  .espaco h3{
+    margin: 10px;
+  }
+  
+  .espaco{
+    float: left;
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 430px;
+    height: 500px;
+  }
+  
+  .area-espaco{
+    width: 100%;
+    top: 540px;
+  }
+  
+  .espaco h3{
+    margin: 10px;
+  }
+  
+  .espaco p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .mais{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 390px;
+    top: 15px;
+  }
+  
+  .btn-saiba{
+    float: left;
+  width: 130px;
+  height: 53px;
+  background: $amarelo!important;
+  }
+  
+  a.btn-whats{
+    color: white;
+  }
+  
+  .espaco2{
+    float: left;
+    position: relative;
+    background-color: gray;
+    color: white;
+    width: 430px;
+    height: 60px;
+  }
+  
+  .espaco2 h3{
+    margin: 10px;
+  }
+  
+  .espaco2 p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .mais2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 390px;
+    top: 15px;
+  }
+  
+  .titulo{
+    margin-top: 112px;
+    width: 900px;
+    height: 223px;
+   
+  }
+  
+  .titulo h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 66px;
+    text-align: center;
+  }
+  
+  .titulo p{
+    font-size: 16px;
+  line-height: 24px;
+  }
+  
+  .subtitulo{
+    margin-top:70px;
+    width: 595px;
+    height: 120px;
+    margin-bottom: 50px;
+  }
+  
+  .subtitulo h2{
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  .subtitulo p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  }
+  
+  .img-area{
+    width:90%;
+    height: 600px;
+    margin-bottom: 50px;
+  }
+  
+  .img-area img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .shadow-bottom{
+    box-shadow: 0 4px 2px -3px gray;
+  }
+  
+  .elipse{
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    right: 0px;
+    top:-50px;
+    z-index: 1;
+  }
+  
+  .bubble{
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    width: 230px;
+  height: 230px;
+  }
+  
+  .solucoes{
+  margin-top: 550px;
+  width: 595px;
+  height: auto;
+  text-align: center;
+  }
+  
+  .icon-card{
+  position: absolute;
+  width: 44px;
+  height: 53px;
+  top: 240px;
+  left: 20px;
+  }
+  
+  .t-card{
+    position: absolute;
+    left: 35px;
+    top: 310px; 
+  }
+  
+  .ovl{
+    opacity: 0;
+  }
+  
+  .ovl:hover{
+    opacity: 1;
+  }
+  
+  .ovl p{
+    font-size: 16px;
+  }
+  
+  .client-img { 
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 4px solid #fff;
+    margin: 0px auto 20px;
+    border-radius: 100%;
+  }
+  .carousel-content {
+    padding: 50px 0px;
+  }
+  .carousel-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  
+  .carousel-content span{
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .client-img img {
+    width: 100%;
+  }
+  
+  .carousel-bg{
+    background: url('../img/box-depoimento.png') no-repeat center center;
+    background-size: 100% 100%;
+  }
+  
+  #testimonialCarousel{
+    width: 80%;
+  }
+  
+  .blockquote{
+    position: absolute;
+    left: 50px;
+  }
+  
+  .input-email{
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #1a1a1a;
+    outline: none;
+  }
+  
+  .btn-conhecer{
+    width: 150px;
+    height:40px;
+    font-weight: 800!important;
+    border: 2px solid #FEDC32!important;
+    box-sizing: border-box;
+  }
+  
+  .btn-newsletter{
+    background: $amarelo!important;
+    width: 150px;
+    height:50px;
+    font-weight: 800!important;
+  }
+  
+  .newsletter{
+    width: 50%;
+  }
+  
+  .text-newsletter p{
+    width: 100%;
+    white-space: pre-line;
+  }
+  
+  a.black{
+    margin-top: 15px;
+    font-size: 20px;
+    color: black!important;
+    text-decoration: underline;
+  }
+  
+  .mt-102{
+    margin-top: 102px;
+  }
+  
+  .conhecer h1{
+    line-height: 50px;
+    width: 75%;
+  }
+  .conhecer p{
+    white-space: pre-line;
+  }
+  
+  .mt-56{
+    margin-top: 56px;
+  }
+  
+  .enderecos p{
+    white-space: pre;
+    white-space: pre-line;
+  }
+  
+  .card-text{
+    white-space: pre-line!important;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),  ( min-width: 1900px){
+
+  .btn-conectar{
+    width: 160px;
+  height: 53px;
+  left: 917px;
+  top: 482px;
+  
+  }
+
+  .fundo{
+    background: url('../img/background_home.png') no-repeat left center;
+    background-size: cover;
+    height: 673px;
+  }
+
+  .whats{
+  position: absolute;
+  width: 227px;
+  height: 287px;
+  left: 1529px;
+  top: 548px;
+  }
+
+  .titulo h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
+    text-align: center;
+  }
+
+  .titulo p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .subtitulo{
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+
+  .subtitulo h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  .subtitulo p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .elipse{
+    width: 288px;
+    height: 288px;
+   
+    position: absolute;
+    z-index: 1;
+  }
+
+  .solucoes{
+    margin-top: 650px;
+    width: auto;
+    height: auto;
+    text-align: center;
     }
-      
-        .img-area{
-          width: 90%;
-          height: 763px;
-          margin-bottom: 50px;
-        }
-      
-        .espaco{
-          position: absolute;
-          background-color: black;
-          color: white;
-          width: 480px;
-          top:705px;
-          height: 500px;
-        
-        }
-      
-        .espaco h3{
-          font-size: 22px;
-        }
-      
-        .espaco p{
-          font-size: 18px;
-        }
-      
-        .mais{
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          left: 430px;
-          top: 13px;
-        }
-      
-        .espaco2{
-          position: absolute;
-          background-color: gray;
-          color: white;
-          width: 480px;
-          top: 705px;
-          height: 60px;
-        }
-      
-        .espaco2 h3{
-          font-size: 22px;
-        }
-      
-        .espaco2 p{
-          font-size: 18px;
-        }
-        
-        .mais2{
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          left: 430px;
-          top: 15px;
-        }
-      
-        .btn-saiba{
-          top:50px;
-          left: 30px;
-        }
-      }
+
+  .bubble{
+    position: absolute;
+    top: 630px;
+    left: 0px;
+    width: 296px;
+    height: 176px;
+  }
+
+  
+.area-espaco{
+width: 95%;
+top: 0px;
+left: 0px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+  .img-area{
+    width: 90%;
+    height: 763px;
+    margin-bottom: 50px;
+  }
+
+  .espaco{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 480px;
+    top:705px;
+    height: 500px;
+  
+  }
+
+  .espaco h3{
+    font-size: 22px;
+  }
+
+  .espaco p{
+    font-size: 18px;
+  }
+
+  .mais{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 430px;
+    top: 13px;
+  }
+
+  .espaco2{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    width: 480px;
+    top: 705px;
+    height: 60px;
+  }
+
+  .espaco2 h3{
+    font-size: 22px;
+  }
+
+  .espaco2 p{
+    font-size: 18px;
+  }
+  
+  .mais2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 430px;
+    top: 15px;
+  }
+
+  .btn-saiba{
+    top:50px;
+    left: 30px;
+  }
+}
+
+
 
 
 //imports o Bootstrap
