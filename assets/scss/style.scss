@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
+$sm: 576px;
+$md: 768px;
+$lg: 992px;  
+$xl: 1200px;
+
+
 $preto:black; 
 $amarelo:#FFF36D;
 
@@ -12,7 +18,7 @@ $theme-colors:(
 
 html,body{
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
- 
+  overflow-x: hidden;
 }
 
 
@@ -41,15 +47,18 @@ p{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 90vh;
+  height: 580px;
+  position: relative;
 }
 
 .btn-conectar{
 position: absolute;
 width: 160px;
 height: 50px;
-left: 400px;
+left: 380px;
 top: 420px;
+bottom: 0px;
+right: 0px;
 background-color:#FEDC32!important;
 }
 
@@ -66,21 +75,22 @@ a.btn-conectar{
   background: black;
   position: absolute;
   width: 220px;
-  height: 220px;
-  left: 1100px;
-  top: 520px;
+  height: 250px;
+  top: 500px;
+  right:40px;
+  bottom: 0px;
 }
 
 .whats img{
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: -50px;
-  left:calc(220px/3);
+  position: relative;
+  width: 90px;
+  height: 90px;
+  top: -20px;
+  left:0;
 }
 
 .whats p{
-  margin-top: 50px;
+  position: relative;
 }
 
 .btn-whats{
@@ -98,13 +108,17 @@ a.btn-conectar{
 }
 
 .espaco{
-  position: absolute;
+  float: left;
+  position: relative;
   background-color: black;
   color: white;
-  width: 450px;
+  width: 430px;
+  height: 500px;
+}
+
+.area-espaco{
+  
   top: 490px;
-  left: 230px;
-  height: 430px;
 }
 
 .espaco h3{
@@ -125,11 +139,9 @@ a.btn-conectar{
 }
 
 .btn-saiba{
-position: absolute;
+  float: left;
 width: 130px;
 height: 53px;
-top: 290px;
-left: 0px;
 background: $amarelo!important;
 }
 
@@ -138,14 +150,12 @@ a.btn-whats{
 }
 
 .espaco2{
-  position: absolute;
+  float: left;
+  position: relative;
   background-color: gray;
   color: white;
-  width: 450px;
-  top: 490px;
-  left: 680px;
+  width: 430px;
   height: 60px;
-  z-index: 1;
 }
 
 .espaco2 h3{
@@ -229,7 +239,7 @@ text-align: center;
   width: 180px;
   height: 200px;
   position: absolute;
-  left:1165px;
+  right: 0px;
   top:-50px;
   z-index: 1;
 }
@@ -243,8 +253,7 @@ height: 176px;
 }
 
 .solucoes{
-position: relative;
-margin-top: 350px;
+margin-top: 550px;
 width: 595px;
 height: auto;
 text-align: center;
@@ -380,1051 +389,866 @@ a.black{
   white-space: pre-line!important;
 }
 //Medias querys----------------------------------------------------------------
-
-@media(width:320px){
+@media (min-width:425px) and (max-width:$sm){
+  
   .btn-conectar{
-    left: 10px;
-    top: 280px;
+    left: 20px;
+    top: calc(400px/1.2);
   }
-
+  
   .fundo{
-    background: url('../img/background_home_mobile_320px.png') no-repeat left center;
+    background: url('../img/background_home_mobile_320px.png') left center no-repeat;
+    height: 430px;
     background-size: cover;
-    height: 350px;
   }
 
   .whats{
-  width: 90%;
-  height: 200px;
-  left: 17px;
-  top: 420px;
-  }
+    width: 80%;
+    height: 250px;
+    left: 50%;
+    top: 480px;
+    right: 0px;
+    bottom: 0px;
+    transform: translateX(-50%);
+    }
 
-  .whats img{
-    width: 90px;
-    height: 90px;
-    left:100px;
-  }
+    .titulo{
+      margin-top: 320px;
+      width: 100%;
+      height: auto;
+    }
 
-  .whats p{
-    margin-top: 40px;
-  }
+    .titulo h1{
+      font-size: 1.8em;
+      line-height: 30px;
+    }
 
-  .btn-whats{
-    margin-left:13px;
-  }
-  
-  .titulo{
-    width: 100%;
-  margin-top: 250px;
-  height: 223px;
-  margin-bottom: 30px;
-  }
+    .titulo p{
+      font-size: 1em;
+    }
 
-  .titulo h1{
-    white-space: pre-line;
-    margin-top: 70px;
-    font-size: 20px;
-    line-height: 30px;
-  }
+    .subtitulo{
+      width: 100%;
+      height: auto;
+    }
 
-  .titulo p{
-    width: 100%;
-  }
-  
-  .subtitulo{
-    margin-top: 100px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 30px;
-  }
+    .subtitulo h2{
+      font-size: 1.5em;
+      line-height: 30px;
+    }
 
-  .subtitulo h2{
-  font-size: 20px;
-  line-height: 30px;
-  }
+    .subtitulo p{
+      font-size: 1em;
+    }
 
-  .img-area{
-    margin-top: 0px;
-    width: 100%;
-    height: 200px;
-    margin-bottom: 50px;
-  }
+    .img-area{
+      width: 90%;
+      height: 280px;
+    }
 
-  .elipse{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left:220px;
-    top:-30px;
-    z-index: 1;
-  }
+    .elipse{
+      width: 150px;
+      height: 150px;
+    }
 
-  .bubble{
-    position: absolute;
-    top: 140px;
-    left: 0px;
-    width: 150px;
-    height: 150px;
-  }
+    .bubble{
+      top:205px;
+      left: 0px;
+    }
+    
+    .area-espaco{
+      width: 100%;
+      top: 240px;
+      left: 0px;
+      left: 53%;
+      transform: translateX(-50%);
+    }
 
-  .espaco{
-    position: absolute;
-    background-color: black;
-    color: white;
-    width: 90%;
-    top: 280px;
-    left: 15px;
-    height: 530px;
-  
-  }
+    .espaco{
+      width: 80%;
+      height: 500px;
+    }
 
-  .espaco h3{
-    font-size: 22px;
-  }
+    .mais{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
+    }
+    
 
-  .espaco p{
-    font-size: 18px;
-  }
+    .espaco2{
+      height: 60px;
+      width: 80%;
+    }
 
-  .mais{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 240px;
-    top: 15px;
-  }
+    .mais2{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
+    }
 
-  .espaco2{
-    display: none;
-    position: absolute;
-    background-color: gray;
-    color: white;
-    width: 90%;
-    top: 380px;
-    left: 15px;
-    height: 60px;
-  }
+    .solucoes{
+      width: 100%;
+    }
 
-  .espaco2 h3{
-    font-size: 22px;
-  }
+    .solucoes h3{
+      font-size: 1.5em;
+      line-height: 30px;
+    }
 
-  .espaco2 p{
-    font-size: 18px;
-  }
-  
-  .mais2{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 240px;
-    top: 15px;
-  }
+    .solucoes p{
+      font-size: 1em;
+    }
+    
+    .carousel-bg{
+      background-size: 0%;
+    }
 
-  .btn-saiba{  
-    width: 130px;
-    height: 53px;
-    top: 0px;
-    left: 20px;
+    .blockquote{
+      display: none;
     }
 
     #testimonialCarousel{
       width: 100%;
     }
 
-    .carousel-bg{
-      background-size: 0%;
+    .input-email{
+      width: 100%;
     }
+}
 
-    .solucoes{
-      margin-top: 650px;
-      width: auto;
-      height: auto;
-      text-align: center;
-      }
 
-      .input-email{
-        width: 100%;
-      }
-      
-      .blockquote{
-        display: none;
-      }
+@media (min-width:$sm) and (max-width:$md){
+  
+  p{
+    font-size: 1.1em;
   }
-@media(width:375px){
+
+  h3{
+    font-size: 1.75rem;
+  }
+  
   .btn-conectar{
+    width: 200px;
+    height: 60px;
     left: 20px;
-    top: 280px;
+    top: calc(480px/1.3);
+  }
+
+  a.btn-conectar{
+    font-size: 1.1em;
+    font-weight: 600;
   }
 
   .fundo{
-    background: url('../img/background_home_mobile_320px.png') no-repeat left center;
+    background: url('../img/background_home_mobile.png') no-repeat left center;
     background-size: cover;
-    height: 350px;
+    height: 480px;
   }
 
   .whats{
-    width: 90%;
-    height: 200px;
-    left: 17px;
-    top: 420px;
-    }
-  
-    .whats img{
-      width: 90px;
-      height: 90px;
-      left:130px;
-    }
-  
-    .whats p{
-      margin-top: 40px;
+    width: 80%;
+    height: 250px;
+    left: 50%;
+    top: 530px;
+    right: 0px;
+    bottom: 0px;
+    transform: translateX(-50%);
     }
 
     .btn-whats{
-      margin-left:13px;
+      height: 70px;
     }
 
-  .titulo{
-    margin-top: 250px;
-    width: 100%;
-    height: 230px;
+    a.btn-whats{
+      font-size: 1.1em;
+      font-weight: 600;
     }
-  
+
+    .titulo{
+      margin-top: 320px;
+      width: 100%;
+      height: auto;
+    }
 
     .titulo h1{
-      margin-top: 70px;
-      font-size: 25px;
+      font-size: 1.9rem;
       line-height: 30px;
     }
 
+    .titulo p{
+      font-size: 1.1em;
+    }
+
     .subtitulo{
-      margin-top: 30px;
       width: 100%;
       height: auto;
-      margin-bottom: 30px;
     }
-  
+
     .subtitulo h2{
-    font-size: 25px;
-    line-height: 30px;
+      font-size: 1.8rem;
+      line-height: 30px;
+    }
+
+    .subtitulo p{
+      font-size: 1.1em;
     }
 
     .img-area{
-      width: 100%;
-      height: 250px;
-      margin-bottom: 50px;
+      width: 90%;
+      height: 320px;
     }
-
+    
     .elipse{
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      left:273px;
-      top:-30px;
-      z-index: 1;
-    }
-  
-    .bubble{
-      position: absolute;
-      top: 190px;
-      left: 0px;
       width: 150px;
       height: 150px;
     }
 
+    .bubble{
+      top:240px;
+      left: 0px;
+    }
+
+    .area-espaco{
+      width: 100%;
+      top: 240px;
+      left: 0px;
+      left: 52%;
+      transform: translateX(-50%);
+    }
+
+    .espaco{
+      width: 80%;
+      height: 400px;
+    }
+
+    .mais{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
+    }
+    
+
+    .espaco2{
+      height: 60px;
+      width: 80%;
+    }
+
+    .mais2{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
+    }
+
+    .solucoes{
+      width: 100%;
+      height: auto;
+    }
+
+    .solucoes h3{
+      font-size: 1.75rem;
+      line-height: 30px;
+    }
+
+    .solucoes p{
+      font-size: 1.1em;
+    }
     .carousel-bg{
       background-size: 0%;
     }
 
-    .solucoes{
-      margin-top: 650px;
-      width: auto;
-      height: auto;
-      text-align: center;
-      }
-
-      .input-email{
-        width: 100%;
-      }
-      
-      .blockquote{
-        display: none;
-      }
-      .espaco{
-        position: absolute;
-        background-color: black;
-        color: white;
-        width: 90%;
-        top: 320px;
-        left: 15px;
-        height: 530px;
-      
-      }
-    
-      .espaco h3{
-        font-size: 22px;
-      }
-    
-      .espaco p{
-        font-size: 18px;
-      }
-    
-      .mais{
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        left: 280px;
-        top: 15px;
-      }
-    
-      .espaco2{
-        display: none;
-        position: absolute;
-        background-color: gray;
-        color: white;
-        width: 90%;
-        top: 400px;
-        left: 15px;
-        height: 60px;
-      }
-    
-      .espaco2 h3{
-        font-size: 22px;
-      }
-    
-      .espaco2 p{
-        font-size: 18px;
-      }
-      
-      .mais2{
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        left: 280px;
-        top: 15px;
-      }
-    
-      .btn-saiba{  
-        width: 130px;
-        height: 53px;
-        top: 0px;
-        left: 20px;
-        }
-    
-        #testimonialCarousel{
-          width: 100%;
-        }
-
-        .card-text{
-          top:430px;
-        }
-
-        .icon-card{
-          top: 350px;
-        }
-}
-
-@media(width:425px){
-  .btn-conectar{
-    left: 10px;
-    top: 290px;
-  }
-
-  .fundo{
-    background: url('../img/background_home_mobile_320px.png') no-repeat left center;
-    background-size: cover;
-    height: 400px;
-  }
-
-  .whats{
-    width: 90%;
-    height: 200px;
-    left: 20px;
-    top: 470px;
-    }
-  
-    .whats img{
-      width: 90px;
-      height: 90px;
-      left:150px;
+    .blockquote{
+      display: none;
     }
 
-    .whats p{
-      margin-top: 50px;
-    }
-
-    .btn-whats{
-      margin-left:15px;
-    }
-
-    .titulo{
-      margin-top: 250px;
+    #testimonialCarousel{
       width: 100%;
-      height: 223px;
-      }
-  
-      .titulo h1{
-        margin-top: 70px;
-        font-size: 25px;
-        line-height: 30px;
-      }
+    }
 
-      .subtitulo{
-        margin-top: 30px;
-        width: 100%;
-        height: auto;
-        margin-bottom: 30px;
-      }
-    
-      .subtitulo h2{
-      font-size: 25px;
-      line-height: 30px;
-      }
-
-      .img-area{
-        width: 100%;
-        height: 250px;
-        margin-bottom: 50px;
-      }
-
-      .elipse{
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        left:330px;
-        top:-30px;
-        z-index: 1;
-      }
-    
-      .bubble{
-        position: absolute;
-        top: 190px;
-        left: 0px;
-        width: 150px;
-        height: 150px;
-      }
-
-      .carousel-bg{
-        background-size: 0%;
-      }
-  
-      .solucoes{
-        margin-top: 650px;
-        width: auto;
-        height: auto;
-        text-align: center;
-        }
-  
-        .input-email{
-          width: 100%;
-        }
-        
-        .blockquote{
-          display: none;
-        }
-        .espaco{
-          position: absolute;
-          background-color: black;
-          color: white;
-          width: 90%;
-          top: 320px;
-          left: 15px;
-          height: 530px;
-        
-        }
-      
-        .espaco h3{
-          font-size: 22px;
-        }
-      
-        .espaco p{
-          font-size: 18px;
-        }
-      
-        .mais{
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          left: 340px;
-          top: 13px;
-        }
-      
-        .espaco2{
-          display: none;
-          position: absolute;
-          background-color: gray;
-          color: white;
-          width: 90%;
-          top: 400px;
-          left: 15px;
-          height: 60px;
-        }
-      
-        .espaco2 h3{
-          font-size: 22px;
-        }
-      
-        .espaco2 p{
-          font-size: 18px;
-        }
-        
-        .mais2{
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          left: 340px;
-          top: 15px;
-        }
-      
-        .btn-saiba{  
-          width: 130px;
-          height: 53px;
-          top: 0px;
-          left: 20px;
-          }
-      
-          #testimonialCarousel{
-            width: 100%;
-          }
-
-          .card-text{
-            top:430px;
-          }
-  
-          .icon-card{
-            top: 350px;
-          }
+    .input-email{
+      width: 100%;
+    }
 }
 
-@media(width:768px){
-  .btn-conectar{
-    width: 300px;
-    height: 80px;
-    left: 10px;
-    top: 490px;
+@media (min-width: $md) and (max-width:$lg){
+  p{
+    font-size: 1.1em;
   }
+
+  h3{
+    font-size: 1.75rem;
+  }
+  
+  .btn-conectar{
+    width: 200px;
+    height: 60px;
+    left: 20px;
+    top: calc(530px/1.3);
+  }
+
+  a.btn-conectar{
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
   .fundo{
     background: url('../img/background_home_mobile.png') no-repeat left center;
     background-size: cover;
-    height: 80vh;
+    height: 530px;
   }
 
   .whats{
-    width: 70%;
-    height: 280px;
-    left: 130px;
-    top: 670px;
-    }
-  
-    .whats img{
-      width: 120px;
-      height: 120px;
-      left:220px;
-    }
-
-    .whats p{
-      margin-top: 80px;
+    width: 80%;
+    height: 250px;
+    left: 50%;
+    top: 580px;
+    right: 0px;
+    bottom: 0px;
+    transform: translateX(-50%);
     }
 
     .btn-whats{
-      margin-left:30px;
       height: 70px;
     }
 
     a.btn-whats{
-      font-size:20px;
-      font-weight: 800;
+      font-size: 1.1em;
+      font-weight: 600;
     }
 
     .titulo{
-      margin-left:0 auto;
-      margin-right:0 auto;
-      margin-top: 350px;
-      width: 100%;
-      height:auto;
-    
-      }
-
-      .titulo h1{
-        margin-top: 70px;
-        font-size: 30px;
-        line-height: 30px;
-      }
-
-      .titulo p{
-        font-size: 18px;
-      }
-
-      .subtitulo{
-        margin-top: 30px;
-        width: 100%;
-        height: auto;
-        margin-bottom: 50px;
-      }
-    
-      .subtitulo h2{
-      font-size: 25px;
-      line-height: 30px;
-      }
-
-      .subtitulo p{
-        font-size: 18px;
-      }
-
-      .img-area{
-        width: 90%;
-        height: 350px;
-        margin-bottom: 50px;
-      }
-
-      .elipse{
-        width: 180px;
-        height: 180px;
-        position: absolute;
-        left:590px;
-        top:-30px;
-        z-index: 1;
-      }
-    
-      .bubble{
-        position: absolute;
-        top: 280px;
-        left: 0px;
-        width: 180px;
-        height: 180px;
-      }
-
-      .carousel-bg{
-        background-size: 0%;
-      }
-  
-      .solucoes{
-        margin-top: 650px;
-        width: auto;
-        height: auto;
-        text-align: center;
-        }
-  
-        .input-email{
-          width: 100%;
-        }
-        
-        .blockquote{
-          display: none;
-        }
-        .espaco{
-          position: absolute;
-          background-color: black;
-          color: white;
-          width: 300px;
-          top: 320px;
-          left: 90px;
-          height: 530px;
-        
-        }
-      
-        .espaco h3{
-          font-size: 22px;
-        }
-      
-        .espaco p{
-          font-size: 18px;
-        }
-      
-        .mais{
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          left: 240px;
-          top: 13px;
-        }
-      
-        .espaco2{
-          display: none;
-          position: absolute;
-          background-color: gray;
-          color: white;
-          width: 300px;
-          top: 320px;
-          left: 390px;
-          height: 60px;
-        }
-      
-        .espaco2 h3{
-          font-size: 22px;
-        }
-      
-        .espaco2 p{
-          font-size: 18px;
-        }
-        
-        .mais2{
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          left: 250px;
-          top: 15px;
-        }
-      
-        .btn-saiba{  
-          width: 130px;
-          height: 53px;
-          top: 0px;
-          left: 20px;
-          }
-      
-          #testimonialCarousel{
-            width: 100%;
-          }
-
-          .card-text{
-            top:390px;
-          }
-  
-          .icon-card{
-            top: 310px;
-          }
-
-}
-
-@media(width:1024px){
-  .btn-conectar{
-    width: 200px;
-    height: 70px;
-    left: 230px;
-    top: 470px;
-  }
-
-  .whats{
-    width: 50%;
-    height: 300px;
-    left: 250px;
-    top: 1070px;
-    }
-  
-    .whats img{
-      width: 130px;
-      height: 130px;
-      left:200px;
-    }
-
-    .whats p{
-      margin-top: 100px;
-    }
-
-    a.btn-whats{
-      font-size:23px;
-      font-weight: 800;
-    }
-
-    .btn-whats{
-      margin-left:25px;
-      height: 70px;
-    }
-
-    .titulo{
-      margin-top: 370px;
+      margin-top: 320px;
       width: 100%;
       height: auto;
-    
-      }
-  
-      .titulo h1{
-        margin-top: 70px;
-        font-size: 40px;
-        line-height: 50px;
-      }
-      
+    }
+
+    .titulo h1{
+      font-size: 1.9rem;
+      line-height: 30px;
+    }
+
+    .titulo p{
+      font-size: 1.1em;
+    }
 
     .subtitulo{
-      margin-top: 30px;
-      width: 90%;
+      width: 100%;
       height: auto;
     }
-  
+
     .subtitulo h2{
-    font-size: 38px;
-    line-height: 50px;
+      font-size: 1.8rem;
+      line-height: 30px;
+    }
+
+    .subtitulo p{
+      font-size: 1.1em;
     }
 
     .img-area{
       width: 90%;
-      height: 430px;
-      margin-bottom: 50px;
+      height: 320px;
     }
-
+    
     .elipse{
-      width: 180px;
-      height: 180px;
-      position: absolute;
-      left:840px;
-      top:-30px;
-      z-index: 1;
+      width: 150px;
+      height: 150px;
     }
-  
+
     .bubble{
-      position: absolute;
-      top: 360px;
+      top:240px;
       left: 0px;
-      width: 180px;
-      height: 180px;
     }
 
-    .subtitulo p{
-      font-size: 18px;
+    .area-espaco{
+      width: 95%;
+      top: 260px;
+      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
-    .titulo p{
-      font-size: 18px;
+    .espaco{
+      width: 90%;
+      height: 400px;
     }
 
-    .carousel-bg{
-      background-size: 0%;
+    .espaco h3{
+      font-size: 25px;
+    }
+
+    .mais{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
+    }
+    
+
+    .espaco2{
+      height: 60px;
+      width: 90%;
+    }
+
+    .espaco2 h3{
+      font-size: 25px;
+    }
+
+    .mais2{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
     }
 
     .solucoes{
-      margin-top: 650px;
-      width: auto;
+      width: 100%;
       height: auto;
-      text-align: center;
-      }
+    }
 
-      .input-email{
-        width: 100%;
-      }
-      
-      .blockquote{
-        display: none;
-      }
-      .espaco{
-        position: absolute;
-        background-color: black;
-        color: white;
-        width: 380px;
-        top: 370px;
-        left: 110px;
-        height: 530px;
-      
-      }
-    
-      .espaco h3{
-        font-size: 22px;
-      }
-    
-      .espaco p{
-        font-size: 18px;
-      }
-    
-      .mais{
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        left: 340px;
-        top: 13px;
-      }
-    
-      .espaco2{
-        display: none;
-        position: absolute;
-        background-color: gray;
-        color: white;
-        width: 380px;
-        top: 370px;
-        left: 500px;
-        height: 60px;
-      }
-    
-      .espaco2 h3{
-        font-size: 22px;
-      }
-    
-      .espaco2 p{
-        font-size: 18px;
-      }
-      
-      .mais2{
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        left: 340px;
-        top: 15px;
-      }
-    
-      .btn-saiba{  
-        width: 130px;
-        height: 53px;
-        top: 0px;
-        left: 20px;
-        }
-    
-        #testimonialCarousel{
-          width: 100%;
-        }
+    .solucoes h3{
+      font-size: 1.75rem;
+      line-height: 30px;
+    }
 
-        .card-text{
-          top:430px;
-        }
+    .solucoes p{
+      font-size: 1.1em;
+    }
 
-        .icon-card{
-          top: 350px;
-        }
+    #testimonialCarousel{
+      width: 100%;
+    }
 
-        .btn-conectar{
-          width: 400px;
-          height: 80px;
-          top:900px;
-          left: 80px;
-        }
+    .input-email{
+      width: 100%;
+    }
 }
 
-@media(width:1920px){
+@media(min-width:$lg) and (max-width:$xl){
+  p{
+    font-size: 1.1em;
+  }
+
+  h3{
+    font-size: 1.75rem;
+  }
+  
   .btn-conectar{
-    width: 160px;
-  height: 53px;
-  left: 917px;
-  top: 482px;
+    width: 200px;
+    height: 60px;
+    left: 40%;
+    transform: translateX(-40%);
+    top: calc(530px/1.3);
+  }
+
+  a.btn-conectar{
+    font-size: 1.1em;
+    font-weight: 600;
   }
 
   .fundo{
-    background: url('../img/background_home.png') no-repeat left center;
+    background: url('../img/background_home_1300px.png') no-repeat right center;
     background-size: cover;
-    height: 673px;
+    height: 600px;
   }
 
   .whats{
-  position: absolute;
-  width: 227px;
-  height: 227px;
-  left: 1529px;
-  top: 548px;
-  }
-
-  .titulo h1{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 66px;
-    text-align: center;
-  }
-
-  .titulo p{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 140%;
-  }
-
-  .subtitulo{
-    margin-top: 150px;
-    margin-bottom: 50px;
-  }
-
-  .subtitulo h2{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-  }
-
-  .subtitulo p{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .elipse{
-    width: 288px;
-    height: 288px;
-    left: 1625px;
-    top: -90px;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .solucoes{
-    margin-top: 650px;
-    width: auto;
-    height: auto;
-    text-align: center;
+    width: 50%;
+    height: 250px;
+    left: 50%;
+    top: 630px;
+    right: 0px;
+    bottom: 0px;
+    transform: translateX(-50%);
     }
 
-  .bubble{
-    position: absolute;
-    top: 630px;
-    left: 0px;
-    width: 296px;
-    height: 176px;
-  }
 
-  .img-area{
-    width: 90%;
-    height: 763px;
-    margin-bottom: 50px;
-  }
+    .titulo{
+      margin-top: 320px;
+      width: 100%;
+      height: auto;
+    }
 
-  .espaco{
-    position: absolute;
-    background-color: black;
-    color: white;
-    width: 480px;
-    top:705px;
-    left: 510px;
-    height: 500px;
-  
-  }
+    .titulo h1{
+      font-size: 1.9rem;
+      line-height: 30px;
+    }
 
-  .espaco h3{
-    font-size: 22px;
-  }
+    .titulo p{
+      font-size: 1.1em;
+    }
 
-  .espaco p{
-    font-size: 18px;
-  }
+    .subtitulo{
+      width: 100%;
+      height: auto;
+    }
 
-  .mais{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 430px;
-    top: 13px;
-  }
+    .subtitulo h2{
+      font-size: 1.8rem;
+      line-height: 30px;
+    }
 
-  .espaco2{
-    position: absolute;
-    background-color: gray;
-    color: white;
-    width: 480px;
-    top: 705px;
-    left: 1010px;
-    height: 60px;
-  }
+    .subtitulo p{
+      font-size: 1.1em;
+    }
 
-  .espaco2 h3{
-    font-size: 22px;
-  }
+    .img-area{
+      width: 90%;
+      height: 400px;
+    }
 
-  .espaco2 p{
-    font-size: 18px;
-  }
-  
-  .mais2{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 430px;
-    top: 15px;
-  }
+    .img-area{
+      width: 90%;
+      height: 450px;
+    }
+    
+    .elipse{
+      width: 150px;
+      height: 150px;
+    }
 
-  .btn-saiba{
-    top:50px;
-    left: 30px;
-  }
+    .bubble{
+      top:370px;
+      left: 0px;
+    }
+
+    .area-espaco{
+      width: 95%;
+      top: 390px;
+      left: 0px;
+      left: 51%;
+      transform: translateX(-50%);
+    }
+
+    .espaco{
+      width: 90%;
+      height: 400px;
+    }
+
+    .espaco h3{
+      font-size: 25px;
+    }
+
+    .mais{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
+    }
+    
+
+    .espaco2{
+      height: 60px;
+      width: 90%;
+    }
+
+    .espaco2 h3{
+      font-size: 25px;
+    }
+
+    .mais2{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
+    }
 }
+
+@media(min-width:$xl) and (max-width:1500px){
+  p{
+    font-size: 1.1em;
+  }
+
+  h3{
+    font-size: 1.75rem;
+  }
+  
+  .btn-conectar{
+    width: 200px;
+    height: 60px;
+    left: 40%;
+    transform: translateX(-40%);
+    top: calc(600px/1.3);
+  }
+
+  a.btn-conectar{
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  .fundo{
+    background: url('../img/background_home_1300px.png') no-repeat right center;
+    background-size: cover;
+    height: 600px;
+  }
+
+  .whats{
+    width: 50%;
+    height: 250px;
+    left: 50%;
+    top: 630px;
+    right: 0px;
+    bottom: 0px;
+    transform: translateX(-50%);
+    }
+
+
+    .titulo{
+      margin-top: 320px;
+      width: 100%;
+      height: auto;
+    }
+
+    .titulo h1{
+      font-size: 1.9rem;
+      line-height: 30px;
+    }
+
+    .titulo p{
+      font-size: 1.1em;
+    }
+
+    .subtitulo{
+      width: 100%;
+      height: auto;
+    }
+
+    .subtitulo h2{
+      font-size: 1.8rem;
+      line-height: 30px;
+    }
+
+    .subtitulo p{
+      font-size: 1.1em;
+    }
+
+    .img-area{
+      width: 90%;
+      height: 400px;
+    }
+
+    .img-area{
+      width: 90%;
+      height: 550px;
+    }
+    
+    .elipse{
+      width: 150px;
+      height: 150px;
+    }
+
+    .bubble{
+      top:470px;
+      left: 0px;
+    }
+
+    .area-espaco{
+      width: 95%;
+      top: 490px;
+      left: 0px;
+      left: 51%;
+      transform: translateX(-50%);
+    }
+
+    .espaco{
+      width: 80%;
+      height: 400px;
+    }
+
+    .espaco h3{
+      font-size: 25px;
+    }
+
+    .mais{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
+    }
+    
+
+    .espaco2{
+      height: 60px;
+      width: 80%;
+    }
+
+    .espaco2 h3{
+      font-size: 25px;
+    }
+
+    .mais2{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 90%;
+      top: 13px;
+    }
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) { 
+        .btn-conectar{
+          width: 160px;
+        height: 53px;
+        left: 917px;
+        top: 482px;
+        }
+      
+        .fundo{
+          background: url('../img/background_home.png') no-repeat left center;
+          background-size: cover;
+          height: 673px;
+        }
+      
+        .whats{
+        position: absolute;
+        width: 227px;
+        height: 227px;
+        left: 1529px;
+        top: 548px;
+        }
+      
+        .titulo h1{
+          font-style: normal;
+          font-weight: bold;
+          font-size: 56px;
+          line-height: 66px;
+          text-align: center;
+        }
+      
+        .titulo p{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 140%;
+        }
+      
+        .subtitulo{
+          margin-top: 150px;
+          margin-bottom: 50px;
+        }
+      
+        .subtitulo h2{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 56px;
+          text-align: center;
+        }
+      
+        .subtitulo p{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      
+        .elipse{
+          width: 288px;
+          height: 288px;
+          left: 1625px;
+          top: -90px;
+          position: absolute;
+          z-index: 1;
+        }
+      
+        .solucoes{
+          margin-top: 650px;
+          width: auto;
+          height: auto;
+          text-align: center;
+          }
+      
+        .bubble{
+          position: absolute;
+          top: 630px;
+          left: 0px;
+          width: 296px;
+          height: 176px;
+        }
+      
+        .img-area{
+          width: 90%;
+          height: 763px;
+          margin-bottom: 50px;
+        }
+      
+        .espaco{
+          position: absolute;
+          background-color: black;
+          color: white;
+          width: 480px;
+          top:705px;
+          left: 510px;
+          height: 500px;
+        
+        }
+      
+        .espaco h3{
+          font-size: 22px;
+        }
+      
+        .espaco p{
+          font-size: 18px;
+        }
+      
+        .mais{
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          left: 430px;
+          top: 13px;
+        }
+      
+        .espaco2{
+          position: absolute;
+          background-color: gray;
+          color: white;
+          width: 480px;
+          top: 705px;
+          left: 1010px;
+          height: 60px;
+        }
+      
+        .espaco2 h3{
+          font-size: 22px;
+        }
+      
+        .espaco2 p{
+          font-size: 18px;
+        }
+        
+        .mais2{
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          left: 430px;
+          top: 15px;
+        }
+      
+        .btn-saiba{
+          top:50px;
+          left: 30px;
+        }
+      }
+
+
 //imports o Bootstrap
 @import './node_modules/bootstrap/scss/bootstrap';
