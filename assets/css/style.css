@@ -768,7 +768,7 @@ a.black {
   .whats {
     position: absolute;
     width: 227px;
-    height: 227px;
+    height: 287px;
     left: 1529px;
     top: 548px; }
   .titulo h1 {
@@ -802,8 +802,6 @@ a.black {
   .elipse {
     width: 288px;
     height: 288px;
-    left: 1625px;
-    top: -90px;
     position: absolute;
     z-index: 1; }
   .solucoes {
@@ -817,6 +815,12 @@ a.black {
     left: 0px;
     width: 296px;
     height: 176px; }
+  .area-espaco {
+    width: 95%;
+    top: 0px;
+    left: 0px;
+    left: 50%;
+    transform: translateX(-50%); }
   .img-area {
     width: 90%;
     height: 763px;
@@ -827,7 +831,6 @@ a.black {
     color: white;
     width: 480px;
     top: 705px;
-    left: 510px;
     height: 500px; }
   .espaco h3 {
     font-size: 22px; }
@@ -845,7 +848,6 @@ a.black {
     color: white;
     width: 480px;
     top: 705px;
-    left: 1010px;
     height: 60px; }
   .espaco2 h3 {
     font-size: 22px; }

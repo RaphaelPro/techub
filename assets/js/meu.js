@@ -100,8 +100,8 @@ var solu = document.getElementById('solu');
       window.matchMedia("(min-width: 425px) and (max-width:576px)"),
       window.matchMedia("(min-width: 577px) and (max-width: 767px)"),
       window.matchMedia("(min-width:768px) and (max-width:992px)"),
-      window.matchMedia("(min-width:992px) and (max-width:1024px)")
-     
+      window.matchMedia("(min-width:992px) and (max-width:1024px)"),
+      window.matchMedia("only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)")
     ]
 
     for(var i = 0; i < mqls.length; i++){
@@ -368,70 +368,134 @@ var solu = document.getElementById('solu');
               text3.style.display="none";
             }
           }
+        }else if(mqls[4].matches){
+          pac.onclick = function() {
+            if(big){
+              big = false;
+              document.getElementById('saiba').style.display = "none";
+              pac.style.height = "60px";
+              pac.style.width = "480px";
+              pac.style.background = "gray";
+              ico.src = "assets/img/abrir.svg";
+              solu.style.marginTop = "50px";
+              pac.style.display ="block";
+              pac.style.zIndex = "1";
+              solu.style.marginTop ="150px";
+              text.style.visibility="hidden";
+              text.style.display="none";
+              text1.style.visibility="hidden";
+              text1.style.display="none";
+              pc2.style.display = "block";
+            }else{
+            document.getElementById('saiba').style.display = "block";
+            big = true;
+            pac.style.height = "500px";
+            pac.style.width = "480px";
+            pac.style.background = "black";
+            ico.src = "assets/img/menos.svg";
+            img.src = "assets/img/recifeantigo.png";
+            solu.style.marginTop = "550px";
+            text.style.visibility="visible";
+            text.style.fontSize ="16px";
+              text.style.display="block";
+              text1.style.visibility="visible";
+              text1.style.display="block";
+              text1.style.fontSize = "16px";
+          }    
+          }
+      
+          pc2.onclick = function(){
+            if(expandido){
+              expandido = false;
+              pc2.style.height = "500px";
+              pc2.style.width = "480px";
+              pc2.style.background = "black";
+              ico2.src = "assets/img/menos.svg";
+              img.src = "assets/img/rio_branco.png";
+              document.getElementById('saiba2').classList.replace('d-none', 'd-block');
+              solu.style.marginTop = "550px";
+              text2.style.display="block";
+              text2.style.visibility="visible";
+              text3.style.visibility="visible";
+              text3.style.display="block"; 
+            }else{
+              expandido = true;
+              pc2.style.height = "60px";
+              pc2.style.width = "480px";
+              pc2.style.background = "gray";
+              ico2.src = "assets/img/abrir.svg"
+              document.getElementById('saiba2').classList.replace('d-block', 'd-none');
+              solu.style.marginTop = "150px";
+              text2.style.display="none";
+              text2.style.visibility="hidden";
+              text3.style.visibility="hidden";
+              text3.style.display="none";
+            }
+          }
         }else{
-    pac.onclick = function() {
-      if(big){
-        big = false;
-        document.getElementById('saiba').style.display = "none";
-        pac.style.height = "60px";
-        pac.style.width = "80%";
-        pac.style.background = "gray";
-        ico.src = "assets/img/abrir.svg";
-        solu.style.marginTop = "50px";
-        pac.style.display ="block";
-        pac.style.zIndex = "1";
-        solu.style.marginTop ="150px";
-        text.style.visibility="hidden";
-        text.style.display="none";
-        text1.style.visibility="hidden";
-        text1.style.display="none";
-        pc2.style.display = "block";
-      }else{
-      document.getElementById('saiba').style.display = "block";
-      big = true;
-      pac.style.height = "500px";
-      pac.style.width = "80%";
-      pac.style.background = "black";
-      ico.src = "assets/img/menos.svg";
-      img.src = "assets/img/recifeantigo.png";
-      solu.style.marginTop = "550px";
-      text.style.visibility="visible";
-      text.style.fontSize ="16px";
-        text.style.display="block";
-        text1.style.visibility="visible";
-        text1.style.display="block";
-        text1.style.fontSize = "16px";
-    }    
-    }
-
-    pc2.onclick = function(){
-      if(expandido){
-        expandido = false;
-        pc2.style.height = "500px";
-        pc2.style.width = "80%";
-        pc2.style.background = "black";
-        ico2.src = "assets/img/menos.svg";
-        img.src = "assets/img/rio_branco.png";
-        document.getElementById('saiba2').classList.replace('d-none', 'd-block');
-        solu.style.marginTop = "550px";
-        text2.style.display="block";
-        text2.style.visibility="visible";
-        text3.style.visibility="visible";
-        text3.style.display="block"; 
-      }else{
-        expandido = true;
-        pc2.style.height = "60px";
-        pc2.style.width = "80%";
-        pc2.style.background = "gray";
-        ico2.src = "assets/img/abrir.svg"
-        document.getElementById('saiba2').classList.replace('d-block', 'd-none');
-        solu.style.marginTop = "150px";
-        text2.style.display="none";
-        text2.style.visibility="hidden";
-        text3.style.visibility="hidden";
-        text3.style.display="none";
-      }
-  }
+          pac.onclick = function() {
+            if(big){
+              big = false;
+              document.getElementById('saiba').style.display = "none";
+              pac.style.height = "60px";
+              pac.style.width = "80%";
+              pac.style.background = "gray";
+              ico.src = "assets/img/abrir.svg";
+              solu.style.marginTop = "50px";
+              pac.style.display ="block";
+              pac.style.zIndex = "1";
+              solu.style.marginTop ="150px";
+              text.style.visibility="hidden";
+              text.style.display="none";
+              text1.style.visibility="hidden";
+              text1.style.display="none";
+              pc2.style.display = "block";
+            }else{
+            document.getElementById('saiba').style.display = "block";
+            big = true;
+            pac.style.height = "500px";
+            pac.style.width = "80%";
+            pac.style.background = "black";
+            ico.src = "assets/img/menos.svg";
+            img.src = "assets/img/recifeantigo.png";
+            solu.style.marginTop = "550px";
+            text.style.visibility="visible";
+            text.style.fontSize ="16px";
+              text.style.display="block";
+              text1.style.visibility="visible";
+              text1.style.display="block";
+              text1.style.fontSize = "16px";
+          }    
+          }
+      
+          pc2.onclick = function(){
+            if(expandido){
+              expandido = false;
+              pc2.style.height = "500px";
+              pc2.style.width = "80%";
+              pc2.style.background = "black";
+              ico2.src = "assets/img/menos.svg";
+              img.src = "assets/img/rio_branco.png";
+              document.getElementById('saiba2').classList.replace('d-none', 'd-block');
+              solu.style.marginTop = "550px";
+              text2.style.display="block";
+              text2.style.visibility="visible";
+              text3.style.visibility="visible";
+              text3.style.display="block"; 
+            }else{
+              expandido = true;
+              pc2.style.height = "60px";
+              pc2.style.width = "80%";
+              pc2.style.background = "gray";
+              ico2.src = "assets/img/abrir.svg"
+              document.getElementById('saiba2').classList.replace('d-block', 'd-none');
+              solu.style.marginTop = "150px";
+              text2.style.display="none";
+              text2.style.visibility="hidden";
+              text3.style.visibility="hidden";
+              text3.style.display="none";
+            }
+        }
 }
     } 
     mqh();
