@@ -1,4 +1,14 @@
+
+@font-face {
+  font-family: 'Inlanders Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inlanders Bold'), url('Inlanders Demo.woff') format('woff');
+  }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+
 
 $sm: 576px;
 $md: 768px;
@@ -52,6 +62,7 @@ p{
 }
 
 .btn-conectar{
+font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
 position: absolute;
 width: 160px;
 height: 50px;
@@ -139,6 +150,7 @@ a.btn-conectar{
 }
 
 .btn-saiba{
+  font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
   float: left;
 width: 130px;
 height: 53px;
@@ -165,6 +177,10 @@ a.btn-whats{
 .espaco2 p{
   font-size: 18px;
   line-height: 30px;
+}
+
+#saiba2{
+  display: none;
 }
 
 .mais2{
@@ -342,6 +358,7 @@ left: 20px;
 }
 
 .btn-newsletter{
+  font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
   background: $amarelo!important;
   width: 150px;
   height:50px;
@@ -387,7 +404,51 @@ a.black{
 
 .card-text{
   white-space: pre-line!important;
+  font-size: .9em!important;
 }
+
+
+.carousel-indicators .active{
+  background-color: $amarelo!important;
+}
+
+.carousel-indicators li {
+  width: 80px!important;
+  background-color:gray!important;
+}
+
+.card{
+  border:none !important;
+}
+
+.card-tt h5{
+  overflow: hidden;
+   text-overflow: ellipsis;     /* fallback */
+   max-height: 100%;
+   display: -webkit-box;      /* fallback */
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.card-tt p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;     /* fallback */
+  max-height: 32px;      /* fallback */
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.card-title{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.card-subtitle{  
+  font-weight: 600;
+}
+
 //Medias querys----------------------------------------------------------------
 @media(min-width:320px) and (max-width:425px){
   
@@ -923,13 +984,13 @@ a.black{
       width: 95%;
       top: 260px;
       left: 0px;
-      left: 50%;
+      left: 52%;
       transform: translateX(-50%);
     }
 
     .espaco{
       width: 90%;
-      height: 400px;
+      height: 500px;
     }
 
     .espaco h3{
@@ -1229,8 +1290,8 @@ a.black{
     }
 
     .espaco{
-      width: 80%;
-      height: 400px;
+      width: 430px;
+      height: 500px;
     }
 
     .espaco h3{
@@ -1248,7 +1309,7 @@ a.black{
 
     .espaco2{
       height: 60px;
-      width: 80%;
+      width: 430px;
     }
 
     .espaco2 h3{
@@ -1550,6 +1611,7 @@ a.black{
   }
   
   .btn-conhecer{
+    font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
     width: 150px;
     height:40px;
     font-weight: 800!important;
@@ -1957,25 +2019,27 @@ a.black{
 @media only screen and (-webkit-min-device-pixel-ratio: 3),  ( min-width: 1900px){
 
   .btn-conectar{
-    width: 160px;
+  width: 160px;
   height: 53px;
-  left: 917px;
-  top: 482px;
+  left: 53%;
+  transform: translateX(-50%);
+  top: calc(700px/1.35);
   
   }
 
   .fundo{
     background: url('../img/background_home.png') no-repeat left center;
     background-size: cover;
-    height: 673px;
+    height: 700px;
   }
 
   .whats{
   position: absolute;
   width: 227px;
   height: 287px;
-  left: 1529px;
-  top: 548px;
+  bottom: 0;
+  right: 150px;
+  top: 630px;
   }
 
   .titulo h1{
@@ -2017,9 +2081,9 @@ a.black{
   }
 
   .elipse{
-    width: 288px;
-    height: 288px;
-   
+    width: 350px;
+    height: 350px;
+  
     position: absolute;
     z-index: 1;
   }
@@ -2035,8 +2099,8 @@ a.black{
     position: absolute;
     top: 630px;
     left: 0px;
-    width: 296px;
-    height: 176px;
+    width: 350px;
+    height: 350px;
   }
 
   
@@ -2049,7 +2113,7 @@ transform: translateX(-50%);
 }
 
   .img-area{
-    width: 90%;
+    width: 85%;
     height: 763px;
     margin-bottom: 50px;
   }
