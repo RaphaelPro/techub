@@ -13,13 +13,13 @@ window.addEventListener('scroll', function () {
     el.classList.add('navbar-light');
     el.classList.add('shadow-bottom')
     btn.classList.remove('text-white');
-    btn.classList.add('text-black');
+    btn.classList.add('text-preto');
 
     icon.src = "assets/img/entrar_black.svg";
     logo.src = "assets/img/logo_black.svg";
 
     ele.forEach(element => {
-      element.classList.replace('text-white', 'text-black');
+      element.classList.replace('text-white', 'text-preto');
     });
 
   } else {
@@ -33,7 +33,7 @@ window.addEventListener('scroll', function () {
     logo.src = "assets/img/logo_white.svg";
 
     ele.forEach(element => {
-      element.classList.replace('text-black', 'text-white');
+      element.classList.replace('text-preto', 'text-white');
     });
   }
 });
@@ -118,18 +118,18 @@ document.addEventListener('DOMContentLoaded', function (e) {
         $('#menu').removeClass('mudaCor');
         $('#menu').addClass('navbar-dark').removeClass('navbar-light');
         $('#menu').removeClass('shadow-bottom');
-        $('.nav-link').addClass('text-white').removeClass('text-black');
+        $('.nav-link').addClass('text-white').removeClass('text-preto');
         $('#logo').attr('src','assets/img/logo_white.svg');
         $('#icon').attr('src','assets/img/mdi_person_outline.svg');
-        $('#btn-entrar').addClass('text-white').removeClass('text-black');
+        $('#btn-entrar').addClass('text-white').removeClass('text-preto');
       }else{
         $('#menu').addClass('mudaCor');
         $('#menu').addClass('navbar-light').removeClass('navbar-dark');
         $('#menu').addClass('shadow-bottom');
-        $('.nav-link').addClass('text-black').removeClass('text-white');
+        $('.nav-link').addClass('text-preto').removeClass('text-white');
         $('#logo').attr('src', 'assets/img/logo_black.svg');
         $('#icon').attr('src', 'assets/img/entrar_black.svg');
-        $('#btn-entrar').addClass('text-black').removeClass('text-white');
+        $('#btn-entrar').addClass('text-preto').removeClass('text-white');
       }
     });  
 
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
     window.matchMedia("(min-width: 1500px) and (max-width: 1800px)"),
     window.matchMedia("only screen and (-webkit-min-device-pixel-ratio: 3),  ( min-width: 1900px)")
   ]
-
+  
   for (var i = 0; i < mqls.length; i++) {
     mqls[i].addListener(mqh);
   }
