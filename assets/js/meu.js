@@ -27,6 +27,7 @@ window.addEventListener('scroll', function () {
     el.classList.remove('navbar-light');
     el.classList.remove('shadow-bottom');
     el.classList.add('navbar-dark');
+    btn.classList.remove('text-preto');
     btn.classList.add('text-white');
 
     icon.src = "assets/img/mdi_person_outline.svg";
@@ -149,8 +150,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
   var mqls = [
     window.matchMedia("(min-width:320px) and (max-width:424px)"),
-    window.matchMedia("(min-width: 425px) and (max-width:576px)"),
-    window.matchMedia("(min-width: 577px) and (max-width: 767px)"),
+    window.matchMedia("(min-width: 425px) and (max-width:575px)"),
+    window.matchMedia("(min-width: 576px) and (max-width: 767px)"),
     window.matchMedia("(min-width:768px) and (max-width:991px)"),
     window.matchMedia("(min-width:992px) and (max-width:1190px)"),
     window.matchMedia("(min-width:1200px) and (max-width:1350px)"),
@@ -178,7 +179,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
@@ -201,7 +203,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -225,7 +228,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: 'none',
+              visibility:'hidden'
             });
           }
 
@@ -240,7 +244,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility:"visible"
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -264,7 +269,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: "none",
+              visibility:"hidden"
             });
 
           } else {
@@ -289,7 +295,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
               display: "none"
             });
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility: "hidden"
             });
 
 
@@ -312,7 +319,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
@@ -335,7 +343,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -359,7 +368,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
           }
 
@@ -374,7 +384,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -398,7 +409,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
 
           } else {
@@ -423,7 +435,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
               display: "none"
             });
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility: "hidden"
             });
 
 
@@ -438,14 +451,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
         $("#mais").click(function (e) {
           e.preventDefault();
-          if ($("#paco").height() == 500) {
+          if ($("#paco").height() == 400) {
             $('#paco').animate({
               height: "60px",
               width: "80%"
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility: "hidden"
             });
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
@@ -463,12 +477,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
           } else {
             $('#paco').animate({
-              height: "500px",
+              height: "400px",
               width: "80%"
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility:"visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -492,7 +507,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
           }
 
@@ -502,12 +518,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
           e.preventDefault();
           if ($("#paco2").height() == 60) {
             $('#paco2').animate({
-              height: "500px",
+              height: "400px",
               width: "80%"
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -531,7 +548,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
 
           } else {
@@ -540,9 +558,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
               width: "80%"
             }, 200);
             $('#paco2').css("background-color", "gray");
-            $('#saiba2').css({
-              display: "none"
-            });
             $("#mais2").attr('src', 'assets/img/abrir.svg');
             $('#solu').animate({
               'margin-top': "150px"
@@ -556,7 +571,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
               display: "none"
             });
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility: "hidden"
             });
 
 
@@ -577,7 +593,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
@@ -600,7 +617,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -624,7 +642,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
           }
 
@@ -639,7 +658,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -663,7 +683,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: 'none',
+              visibility:'hidden'
             });
 
           } else {
@@ -673,7 +694,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco2').css("background-color", "gray");
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility: "hidden"
             });
             $("#mais2").attr('src', 'assets/img/abrir.svg');
             $('#solu').animate({
@@ -702,14 +724,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
         $("#mais").click(function (e) {
           e.preventDefault();
-          if ($("#paco").height() == 540) {
+          if ($("#paco").height() == 410) {
             $('#paco').animate({
               height: "60px",
-              width: "70%"
+              width: "88%"
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility: "hidden"
             });
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
@@ -727,12 +750,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
           } else {
             $('#paco').animate({
-              height: "540px",
-              width: "70%"
+              height: "410px",
+              width: "88%"
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -756,7 +780,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
           }
 
@@ -766,12 +791,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
           e.preventDefault();
           if ($("#paco2").height() == 60) {
             $('#paco2').animate({
-              height: "540px",
-              width: "70%"
+              height: "410px",
+              width: "88%"
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -795,17 +821,19 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: 'none',
+              visibility:'hidden'
             });
 
           } else {
             $('#paco2').animate({
               height: "60px",
-              width: "70%"
+              width: "88%"
             }, 200);
             $('#paco2').css("background-color", "gray");
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $("#mais2").attr('src', 'assets/img/abrir.svg');
             $('#solu').animate({
@@ -819,9 +847,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
               visibility: "hidden",
               display: "none"
             });
-            $('#saiba2').css({
-              display: "none"
-            });
+           
 
 
           }
@@ -834,14 +860,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
         $("#mais").click(function (e) {
           e.preventDefault();
-          if ($("#paco").height() == 500) {
+          if ($("#paco").height() == 430) {
             $('#paco').animate({
               height: "60px",
               width: "430px"
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
@@ -859,12 +886,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
           } else {
             $('#paco').animate({
-              height: "500px",
+              height: "430px",
               width: "430px"
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -888,7 +916,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: 'none',
+              visibility:'hidden'
             });
           }
 
@@ -898,12 +927,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
           e.preventDefault();
           if ($("#paco2").height() == 60) {
             $('#paco2').animate({
-              height: "500px",
+              height: "430px",
               width: "430px"
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -927,7 +957,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
 
           } else {
@@ -937,7 +968,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco2').css("background-color", "gray");
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $("#mais2").attr('src', 'assets/img/abrir.svg');
             $('#solu').animate({
@@ -951,10 +983,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
               visibility: "hidden",
               display: "none"
             });
-            $('#saiba2').css({
-              display: "none"
-            });
-
 
           }
 
@@ -971,15 +999,17 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
         $("#mais").click(function (e) {
           e.preventDefault();
-          if ($("#paco").height() == 500) {
+          if ($("#paco").height() == 430) {
             $('#paco').animate({
               height: "60px",
               width: "430px"
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility: "hidden"
             });
+            
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
             $('#solu').animate({
@@ -996,12 +1026,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
           } else {
             $('#paco').animate({
-              height: "500px",
+              height: "430px",
               width: "430px"
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -1025,7 +1056,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
           }
 
@@ -1035,12 +1067,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
           e.preventDefault();
           if ($("#paco2").height() == 60) {
             $('#paco2').animate({
-              height: "500px",
+              height: "430px",
               width: "430px"
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -1064,7 +1097,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
 
           } else {
@@ -1074,7 +1108,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco2').css("background-color", "gray");
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility: 'hidden'
             });
             $("#mais2").attr('src', 'assets/img/abrir.svg');
             $('#solu').animate({
@@ -1088,10 +1123,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
               visibility: "hidden",
               display: "none"
             });
-            $('#saiba2').css({
-              display: "none"
-            });
-
 
           }
 
@@ -1107,14 +1138,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
         $("#mais").click(function (e) {
           e.preventDefault();
-          if ($("#paco").height() == 500) {
+          if ($("#paco").height() == 430) {
             $('#paco').animate({
               height: "60px",
               width: "430px"
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
@@ -1132,12 +1164,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
           } else {
             $('#paco').animate({
-              height: "500px",
+              height: "430px",
               width: "430px"
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -1161,7 +1194,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
           }
 
@@ -1171,12 +1205,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
           e.preventDefault();
           if ($("#paco2").height() == 60) {
             $('#paco2').animate({
-              height: "500px",
+              height: "430px",
               width: "430px"
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility: 'visible'
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -1200,7 +1235,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
 
           } else {
@@ -1210,7 +1246,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco2').css("background-color", "gray");
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility: "hidden"
             });
             $("#mais2").attr('src', 'assets/img/abrir.svg');
             $('#solu').animate({
@@ -1222,9 +1259,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
             });
             $('#text3').css({
               visibility: "hidden",
-              display: "none"
-            });
-            $('#saiba2').css({
               display: "none"
             });
           }
@@ -1236,14 +1270,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
         $("#mais").click(function (e) {
           e.preventDefault();
-          if ($("#paco").height() == 500) {
+          if ($("#paco").height() == 400) {
             $('#paco').animate({
               height: "60px",
               width: "480px"
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
@@ -1261,12 +1296,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
           } else {
             $('#paco').animate({
-              height: "500px",
+              height: "400px",
               width: "480px"
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -1290,7 +1326,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: 'none',
+              visibility: 'hidden'
             });
           }
 
@@ -1300,12 +1337,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
           e.preventDefault();
           if ($("#paco2").height() == 60) {
             $('#paco2').animate({
-              height: "500px",
+              height: "400px",
               width: "480px"
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -1329,7 +1367,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: "none",
+              visibility:"hidden"
             });
 
           } else {
@@ -1339,7 +1378,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco2').css("background-color", "gray");
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $("#mais2").attr('src', 'assets/img/abrir.svg');
             $('#solu').animate({
@@ -1351,9 +1391,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
             });
             $('#text3').css({
               visibility: "hidden",
-              display: "none"
-            });
-            $('#saiba2').css({
               display: "none"
             });
           }
@@ -1366,14 +1403,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
         $("#mais").click(function (e) {
           e.preventDefault();
-          if ($("#paco").height() == 500) {
+          if ($("#paco").height() == 430) {
             $('#paco').animate({
               height: "60px",
               width: "80%"
             }, 200);
             $('#paco').css("background-color", "gray");
             $('#saiba').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#img-espaco').attr('src', 'assets/img/recifeantigo.png');
@@ -1391,12 +1429,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
           } else {
             $('#paco').animate({
-              height: "500px",
+              height: "430px",
               width: "80%"
             }, 200);
             $('#paco').css("background-color", "#000");
             $('#saiba').css({
-              display: "block"
+              display: "block",
+              visibility:"visible"
             });
             $("#mais").attr('src', 'assets/img/menos.svg');
             $('#solu').css({
@@ -1420,7 +1459,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais2').attr('src', 'assets/img/abrir.svg');
             $('#saiba2').css({
-              display: 'none'
+              display: "none",
+              visibility:"hidden"
             });
           }
 
@@ -1430,12 +1470,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
           e.preventDefault();
           if ($("#paco2").height() == 60) {
             $('#paco2').animate({
-              height: "500px",
+              height: "430px",
               width: "80%"
             }, 200);
             $('#paco2').css("background-color", "black");
             $('#saiba2').css({
-              display: "block"
+              display: "block",
+              visibility: "visible"
             });
             $('#mais2').attr('src', 'assets/img/menos.svg');
             $('#img-espaco').attr('src', 'assets/img/rio_branco.png');
@@ -1459,7 +1500,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
             $('#mais').attr('src', 'assets/img/abrir.svg');
             $('#saiba').css({
-              display: 'none'
+              display: "none",
+              visibility:"hidden"
             });
 
           } else {
@@ -1469,7 +1511,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }, 200);
             $('#paco2').css("background-color", "gray");
             $('#saiba2').css({
-              display: "none"
+              display: "none",
+              visibility:"hidden"
             });
             $("#mais2").attr('src', 'assets/img/abrir.svg');
             $('#solu').animate({
@@ -1481,9 +1524,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
             });
             $('#text3').css({
               visibility: "hidden",
-              display: "none"
-            });
-            $('#saiba2').css({
               display: "none"
             });
           }
