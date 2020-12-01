@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'Inlanders Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inlanders Bold'), url('Inlanders Demo.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+$preto:black;
+$amarelo:#FEDC32;
+$cinza:#EEEEEE;
+
+$link-color: $preto;
+
+$theme-colors:("preto": $preto,
+  "amarelo": $amarelo,
+  "cinza": $cinza);
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+.mt-56 {
+  margin-top: 56px;
+}
+
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-102 {
+  margin-top: 102px;
+}
+
+.mt-150 {
+  margin-top: 150px;
+}
+
+
+.index {
+  z-index: 1;
+}
+
+#menu {
+  z-index: 1000;
+}
+
+.shadow-bottom {
+  box-shadow: 0 4px 2px -3px gray;
+}
+
+.elipse {
+  position: absolute;
+  top: -50px;
+  right: -40px;
+  z-index: 15;
+  width: 242px;
+}
+
+.bubble {
+  position: absolute;
+  bottom: 0px;
+  left: -45px;
+  z-index: 15;
+  width: 296px;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
+.card-tt h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* fallback */
+  line-height: 55px;
+  /* fallback */
+  max-height: 100%;
+  display: -webkit-box;
+  /* fallback */
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.card-tt h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* fallback */
+  max-height: 100%;
+  display: -webkit-box;
+  /* fallback */
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.text-cont {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.cont {
+  background: black;
+  width: 735px;
+  max-height: 586px;
+}
+
+.cont img{
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter {
+  width: 50%;
+}
+
+.btn-newsletter {
+  font-family: 'Inlanders Bold', 'Roboto', sans-serif !important;
+  background: $amarelo !important;
+  width: 150px;
+  height: 50px;
+  font-weight: 800 !important;
+}
+
+
+.input-email {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #1a1a1a;
+  outline: none;
+}
+
+.header{
+  width: 100%;
+  max-height: 501px;
+}
+
+.header .img-header{
+ width: 100%;
+ height: 100%;
+}
+
+@media(min-width:320px) and (max-width: 425px){
+  .elipse{display: none;}
+  .bubble{display: none;}
+  .cont {background: #fefefe;width: 100%;}
+  .header{height: 250px;}
+}
+
+@media(min-width:426px) and (max-width: $sm){
+  .elipse{display: none;}
+  .bubble{display: none;}
+  .cont {background: #fefefe;width: 100%;}
+  .header{height: 250px;}
+}
+
+@media(min-width:577px) and (max-width: 767px){
+  .elipse{display: none;}
+  .bubble{display: none;}
+  .cont {background: #fefefe;width: 100%;}
+  .header{height: 250px;}
+}
+
+@media(min-width:$md) and (max-width: 990px){
+  .elipse{width: 180px;right: -20px;}
+  .bubble{width: 200px; bottom: 20px;}
+  .cont {background: #fefefe;width: 100%;}
+  .header{height: 350px;}
+}
+
+@media(min-width:$lg) and (max-width: $xl){
+  .elipse{width: 230px;right: -30px;}
+  .bubble{width: 250px; bottom: 20px; left: -30px;}
+  .cont {background: #fefefe;width: 100%;}
+  .header{height: 430px;}
+}
+
+@media(min-width:1210px) and (max-width: 1300px){
+  .elipse{width: 230px;right: -30px;}
+  .bubble{width: 250px; bottom: 20px; left: -30px;}
+  .cont {background: #fefefe;width: 90%;}
+  .header{height: 430px;}
+}
+
+@media(min-width:1360px) and (max-width: 1500px){
+  .elipse{width: 230px;right: -30px;}
+  .bubble{width: 250px; bottom: 20px; left: -30px;}
+  .cont {background: #fefefe;width: 735px; max-height: 586px;}
+  .header{height: 450px;}
+}
+
+@media(min-width:1510px) and (max-width: 1800px){
+  .elipse{width: 230px;right: -30px;}
+  .bubble{width: 250px; bottom: 20px; left: -30px;}
+  .cont {background: #fefefe;width: 735px; max-height: 586px;}
+  .header{ max-height: 501px;}
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),  ( min-width: 1900px){
+  .elipse{width: 230px;right: -30px;}
+  .bubble{width: 250px; bottom: 20px; left: -30px;}
+  .cont {background: #fefefe;width: 735px; max-height: 586px;}
+  .header{max-height: 501px;}
+}
+
+//imports o Bootstrap
+@import './node_modules/bootstrap/scss/bootstrap';

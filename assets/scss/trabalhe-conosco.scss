@@ -1,0 +1,716 @@
+
+@font-face {
+  font-family: 'Inlanders Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inlanders Bold'), url('Inlanders Demo.woff') format('woff');
+  }
+
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;  
+$xl: 1200px;
+
+
+$preto:black; 
+$amarelo:#FEDC32;
+$cinza:#EEEEEE;
+
+$link-color: $preto;
+
+$theme-colors:(
+  "preto": $preto,
+  "amarelo": $amarelo,
+  "cinza": $cinza
+  );
+
+//Quem Somos
+.bg-trabalhe{
+  background: url("../img/bg-trabalhe.png") no-repeat;
+  background-position: 65% 0%;
+  background-size: cover;
+  height: 550px;
+}
+
+.mt-56{
+  margin-top: 56px;
+}
+
+
+.mt-70{
+  margin-top: 70px;
+}
+
+.mt-102{
+  margin-top: 102px;
+}
+
+.conectar{
+  background: url('../img/box-depoimento.png') no-repeat center center;
+  height: 500px;
+  white-space: pre-line;
+}
+
+.pre-line{
+  white-space:pre-line;
+}
+
+.shadow-bottom{
+  box-shadow: 0 4px 2px -3px gray;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.img-quem{
+  width: 100%; 
+ position: absolute;
+ top:-150px;
+}
+
+.img-quem img{
+  width: 100%;
+  height: 100%;
+}
+
+.bolha-azul{
+  position: absolute;
+  bottom: -50px;
+  left: -30px;
+  z-index: 0!important;
+}
+
+.btn-out{
+font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+border: 2px solid $amarelo!important;
+width: 150px;
+height: 50px;
+}
+
+.index{
+  z-index: 1;
+}
+
+.whats{
+  color: white;
+  background: black;
+  position: absolute;
+  width: 220px;
+  height: 250px;
+  top: 500px;
+  right:40px;
+  bottom: 0px;
+}
+
+.whats img{
+  position: relative;
+  width: 90px;
+  height: 90px;
+  top: -20px;
+  left:0;
+}
+
+.whats p{
+  position: relative;
+}
+
+.btn-whats{
+  position: relative;
+  background-color: #25d165!important;
+  width: 90%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left:13px;
+}
+
+a.btn-whats{
+  color: white;
+}
+
+.foo{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right:0;
+  z-index: 300;
+}
+
+.elipse{
+  width: 180px;
+  height: 200px;
+  position: absolute;
+  right: 0px;
+  top:-80px;
+  z-index: 1;
+}
+
+.bubble{
+  position: absolute;
+  width: 180px;
+  top:240px;
+  left: 0px;
+}
+
+#menu{
+z-index: 1000;
+}
+
+
+
+.btn-newsletter{
+  font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+  background: $amarelo!important;
+  width: 150px;
+  height:50px;
+  font-weight: 800!important;
+}
+
+.card{
+  border:none !important;
+}
+
+
+@media(min-width: 320px) and (max-width:424px){
+  .bg-somos{height: 300px;}
+  .mt-102{margin-top: 50px;}
+  .conectar{background-size: 0; height: auto;margin-bottom: 30px;}
+  .conectar h1{font-size: 2em;}
+   h2{font-size: 1.8em!important;}
+   h3{font-size: 1.6em!important;}
+  .foo{display: block;}
+  .whats{display:none;}
+  .card-text{font-size: .9em;}
+  .img-square-wrapper img{width: 50px;} 
+  .img-quem{ position: static; width: 100%;}
+  .bubble{display: none;}
+  .elipse{display: none;}
+  .bolha-azul{display: none;}
+}
+
+
+@media(min-width: 425px) and (max-width:575px){
+  .bg-somos{height: 300px;}
+  .mt-102{margin-top: 50px;}
+  .conectar{background-size: 0; height: auto;margin-bottom: 30px;}
+  .conectar h1{font-size: 2em;}
+   h2{font-size: 1.8em!important;}
+   h3{font-size: 1.6em!important;}
+  .foo{display: block;}
+  .whats{display:none;}
+  .img-quem{ position: static; width: 100%;}
+  .bubble{display: none;}
+  .elipse{display: none;}
+  .bolha-azul{display: none;}
+}
+
+@media (min-width:$sm) and (max-width:767px){
+  .bg-somos{height: 300px;}
+  .mt-102{margin-top: 50px;}
+  .conectar{background-size: 0; height: auto;margin-bottom: 30px;}
+  .conectar h1{font-size: 2em;}
+   h2{font-size: 1.8em!important;}
+   h3{font-size: 1.6em!important;}
+  .foo{display: block;}
+  .whats{display:none;}
+  .img-quem{ position: static; width: 100%;}
+  .bubble{display: none;}
+  .elipse{display: none;}
+  .bolha-azul{display: none;}
+}
+
+
+@media (min-width:$md) and (max-width:990px){
+  .bg-somos{height: 400px;}
+  .mt-102{margin-top: 50px;}
+  .conectar{background-size: 0; height: auto;margin-bottom: 30px;margin-top: 320px;}
+  .conectar h1{font-size: 2.5em;}
+   h2{font-size: 2.2em!important;}
+   h3{font-size: 1.8em!important;}
+   p{font-size: 1.3em;}
+  .whats{left: 50%;transform: translateX(-50%);  width: 70%;height: 270px;}
+  .btn-whats{height: 70px; left: 15px;}
+  a.btn-whats{font-size: 1.1em;font-weight: 600;}
+  .img-quem{ position: static; width: 100%;}
+  .img-quem img{width: 100%; height: 100%;}
+  .bubble{top: 660px; left: 0px;width: 230px;}
+  .elipse{top: 250px; right: 0px;width: 230px;}
+  .bolha-azul{top: 100px;}
+  
+}
+
+@media (min-width:$lg) and (max-width:1190px){
+  .bg-somos{height: 500px;}
+  .mt-102{margin-top: 50px;}
+  .conectar{margin-top: 350px; background-size: 0; height: auto;margin-bottom: 30px;}
+  .conectar h1{font-size: 2.8em;}
+   h2{font-size: 2.4em!important;}
+   h3{font-size: 2em!important;}
+   p{font-size: 1.8em;}
+   .whats{top:570px;left: 50%;transform: translateX(-50%);  width: 60%;height: 300px;}
+   .btn-whats{height: 70px; left: 15px;}
+   a.btn-whats{font-size: 1.1em;font-weight: 600;}
+  .img-quem{ position: static; width: 100%;}
+  .bubble{top: 880px; left: 0px;width:300px;}
+  .elipse{top: 330px;right: 0px;width: 300px;}
+  .bolha-azul{top: 180px;}
+  .foo{width: 150px;height: 150px;}
+  .foo img{width: 85%;}
+}
+
+
+@media (min-width:$xl) and (max-width:1300px){
+  .bg-somos{height: 500px;}
+  .mt-102{margin-top: 50px;}
+  .conectar{margin-top: 350px;;background-size: 0; height: auto;margin-bottom: 30px;}
+  .conectar h1{font-size: 2.8em;}
+   h2{font-size: 2.2em!important;}
+   h3{font-size: 1.8em!important;}
+   p{font-size: 1.5em;}
+  .whats{top:570px;left: 50%;transform: translateX(-50%);  width: 50%;height: 300px;}
+  .btn-whats{height: 70px; left: 15px;}
+  a.btn-whats{font-size: 1.1em;font-weight: 600;}
+  .img-quem{ position: static; width: 100%;}
+  .bubble{top: 410px; left: 0px;width:220px;}
+  .elipse{top: 0px; right: 0px;width:220px;}
+  .bolha-azul{display: none;}
+}
+
+@media (min-width:1360px) and (max-width:1490px){
+  .bg-somos{
+    background: url("../img/bg-quem-somos_1300px.png") no-repeat top center;
+    background-size: cover;
+    height: 550px;
+  }
+  
+  .mt-70{
+    margin-top: 70px;
+  }
+  
+  .mt-102{
+    margin-top: 150px;
+  }
+  
+  .conectar{
+    background: url('../img/box-depoimento.png') no-repeat center center;
+    height: 500px;
+    white-space: pre-line;
+  }
+  
+  .pre-line{
+    white-space:pre-line;
+  }
+  
+  .shadow-bottom{
+    box-shadow: 0 4px 2px -3px gray;
+  }
+  
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  
+  .img-quem{
+    
+    width: 630px;
+   position: absolute;
+   top:-150px;
+  }
+  
+  .img-quem img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bolha-azul{
+    position: absolute;
+    bottom: -50px;
+    left: -30px;
+    z-index: 0!important;
+  }
+  
+  .btn-out{
+  font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+  border: 2px solid $amarelo!important;
+  width: 150px;
+  height: 50px;
+  }
+  
+  .index{
+    z-index: 1;
+  }
+  
+  .whats{
+    color: white;
+    background: black;
+    position: absolute;
+    width: 220px;
+    height: 250px;
+    top: 500px;
+    right:40px;
+    bottom: 0px;
+  }
+  
+  .whats img{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: -20px;
+    left:0;
+  }
+  
+  .whats p{
+    position: relative;
+  }
+  
+  .btn-whats{
+    position: relative;
+    background-color: #25d165!important;
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left:13px;
+  }
+  
+  a.btn-whats{
+    color: white;
+  }
+  
+  .foo{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    z-index: 300;
+  }
+  
+  .elipse{
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    right: 0px;
+    top:-80px;
+    z-index: 1;
+  }
+  
+  .bubble{
+    position: absolute;
+    width: 180px;
+    top:240px;
+    left: 0px;
+  }
+  
+  #menu{
+  z-index: 1000;
+  }
+  
+  
+  
+  .btn-newsletter{
+    font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+    background: $amarelo!important;
+    width: 150px;
+    height:50px;
+    font-weight: 800!important;
+  }
+  
+  .card{
+    border:none !important;
+  }
+  
+}
+
+
+@media (min-width:1500px) and (max-width:1890px){
+  .bg-somos{
+    background: url("../img/bg-quem-somos.jpg") no-repeat top center;
+    background-size: cover;
+    height: 550px;
+  }
+  
+  .mt-70{
+    margin-top: 70px;
+  }
+  
+  .mt-102{
+    margin-top: 252px;
+  }
+  
+  .conectar{
+    background: url('../img/box-depoimento.png') no-repeat center center;
+    height: 500px;
+    white-space: pre-line;
+  }
+  
+  .pre-line{
+    white-space:pre-line;
+  }
+  
+  .shadow-bottom{
+    box-shadow: 0 4px 2px -3px gray;
+  }
+  
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  
+  .img-quem{
+    width: 700px;
+   position: absolute;
+   top:-150px;
+  }
+  
+  .img-quem img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bolha-azul{
+    position: absolute;
+    bottom: -50px;
+    left: -30px;
+    z-index: 0!important;
+  }
+  
+  .btn-out{
+  font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+  border: 2px solid $amarelo!important;
+  width: 150px;
+  height: 50px;
+  }
+  
+  .index{
+    z-index: 1;
+  }
+  
+  .whats{
+    color: white;
+    background: black;
+    position: absolute;
+    width: 220px;
+    height: 250px;
+    top: 500px;
+    right:40px;
+    bottom: 0px;
+  }
+  
+  .whats img{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: -20px;
+    left:0;
+  }
+  
+  .whats p{
+    position: relative;
+  }
+  
+  .btn-whats{
+    position: relative;
+    background-color: #25d165!important;
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left:13px;
+  }
+  
+  a.btn-whats{
+    color: white;
+  }
+  
+  .foo{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    z-index: 300;
+  }
+  
+  .elipse{
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    top:-80px;
+    z-index: 1;
+  }
+  
+  .bubble{
+    position: absolute;
+    width: 270px;
+    top:240px;
+    left: 0px;
+  }
+  
+  #menu{
+  z-index: 1000;
+  }
+  
+  
+  
+  .btn-newsletter{
+    font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+    background: $amarelo!important;
+    width: 150px;
+    height:50px;
+    font-weight: 800!important;
+  }
+  
+  .card{
+    border:none !important;
+  }
+  
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),  ( min-width: 1900px){
+  .bg-somos{
+    background: url("../img/bg-quem-somos.jpg") no-repeat top center;
+    background-size: cover;
+    height: 700px;
+  }
+  
+  .mt-70{
+    margin-top: 70px;
+  }
+  
+  .mt-102{
+    margin-top: 230px;
+  }
+  
+  .conectar{
+    background: url('../img/box-depoimento.png') no-repeat center center;
+    height: 500px;
+    white-space: pre-line;
+  }
+  
+  .pre-line{
+    white-space:pre-line;
+  }
+  
+  .shadow-bottom{
+    box-shadow: 0 4px 2px -3px gray;
+  }
+  
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  
+  .img-quem{
+    width: 780px;
+   position: absolute;
+   top:-150px;
+  }
+  
+  .img-quem img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bolha-azul{
+    position: absolute;
+    bottom: -100px;
+    left: -30px;
+    width: 200px;
+    z-index: 0!important;
+  }
+  
+  .btn-out{
+  font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+  border: 2px solid $amarelo!important;
+  width: 150px;
+  height: 50px;
+  }
+  
+  .index{
+    z-index: 1;
+  }
+  
+  .whats{
+    position: absolute;
+    width: 227px;
+    height: 287px;
+    bottom: 0;
+    right: 150px;
+    top: 630px;
+    }
+  .whats img{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: -20px;
+    left:0;
+  }
+  
+  .whats p{
+    position: relative;
+  }
+  
+  .btn-whats{
+    position: relative;
+    background-color: #25d165!important;
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left:13px;
+  }
+  
+  a.btn-whats{
+    color: white;
+  }
+  
+  .foo{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    z-index: 300;
+  }
+  
+  .elipse{
+    width: 280px;
+    height: 200px;
+    position: absolute;
+    right: 0px;
+    top:-80px;
+    z-index: 1;
+  }
+  
+  .bubble{
+    position: absolute;
+    width: 280px;
+    top:240px;
+    left: 0px;
+  }
+  
+  #menu{
+  z-index: 1000;
+  }
+  
+  
+  
+  .btn-newsletter{
+    font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+    background: $amarelo!important;
+    width: 150px;
+    height:50px;
+    font-weight: 800!important;
+  }
+  
+  .card{
+    border:none !important;
+  }
+  
+}
+
+
+
+//imports o Bootstrap
+@import './node_modules/bootstrap/scss/bootstrap';
