@@ -28,11 +28,18 @@ $theme-colors:(
   "cinza": $cinza
   );
 
-html,body{
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
- 
+*{
+  margin: 0;
+    padding: 0;
+  box-sizing: border-box;
 }
 
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
 
 p{
   margin-top: 32px;
@@ -487,6 +494,7 @@ a.black{
   display: none;
   visibility: hidden;
 }
+
 
 //Medias querys----------------------------------------------------------------
 @media(min-width:320px) and (max-width:424px){

@@ -1,0 +1,132 @@
+
+
+@font-face {
+  font-family: 'Inlanders Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inlanders Bold'), url('Inlanders Demo.woff') format('woff');
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;  
+$xl: 1200px;
+
+
+$preto:black; 
+$amarelo:#FEDC32;
+$cinza:#EEEEEE;
+
+$link-color: $preto;
+
+$theme-colors:(
+  "preto": $preto,
+  "amarelo": $amarelo,
+  "cinza": $cinza
+  );
+
+
+html,body{
+  height: 100%;
+}
+
+.bg-login{
+  background: url("../img/bg-login.png") no-repeat top right;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.input-style{
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom-width: 1px;
+  border-bottom-color: #1a1a1a;
+  border-top-style: none; 
+  border-right-style: none; 
+  border-left-style: none; 
+  font-size: 1em;
+  font-weight: 100;
+  color: #1a1a1a;
+}
+
+.btn-logar{
+  font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+  width: 160px;
+  height: 50px;
+  background: $amarelo!important;
+}
+
+.btn-outline-logar{
+  font-family:'Inlanders Bold', 'Roboto', sans-serif!important ;
+  width: 160px;
+  height: 50px;
+  border: 1px solid $amarelo!important;
+}
+
+
+.maximo{
+  height: 100vh;
+}
+
+
+.whats{
+  position: absolute;
+  width: 150px;
+  right: -70px;
+  bottom: 30px;
+}
+
+
+@media(min-width:768px) and (max-width:992px){
+    .whats{
+      right: 20px;
+      bottom: 30px;
+      width: 150px;
+    }
+}
+
+@media(min-width:993px) {
+  .whats{
+    right: 20px;
+    bottom: 30px;
+    width: 150px;
+  }
+}
+
+
+@media(min-width:1200px) and (max-width:1440px){
+  .whats{
+    right: -50px;
+    bottom: 30px;
+    width: 150px;
+  }
+}
+
+@media(min-width:1445px) and (max-width:1800px){
+  .whats{
+    right: -60px;
+    bottom: 30px;
+    width: 190px;
+  }
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),  ( min-width: 1900px){
+  
+  .whats{
+    right: -70px;
+    bottom: 30px;
+    width: 230px;
+  }
+}
+
+@import './node_modules/bootstrap/scss/bootstrap';
